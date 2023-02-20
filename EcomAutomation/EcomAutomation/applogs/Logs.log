@@ -1,0 +1,14 @@
+2023-02-20 19:40:33 INFO  UserTests:36 - URL is entered in browser
+2023-02-20 19:40:34 INFO  UserTests:41 - verifyLoginTest() test started
+2023-02-20 19:40:35 INFO  BasePage:38 - Clicked on By.id: popuplogin
+2023-02-20 19:40:38 INFO  BasePage:32 - Value Entered : '' in By.id: username
+2023-02-20 19:40:41 INFO  BasePage:32 - Value Entered : '' in By.id: password
+2023-02-20 19:40:46 INFO  BasePage:38 - Clicked on By.name: login
+2023-02-20 19:40:48 INFO  BasePage:38 - Clicked on By.id: popuplogin
+2023-02-20 19:40:51 INFO  BasePage:32 - Value Entered : '' in By.id: password
+2023-02-20 19:40:54 INFO  BasePage:38 - Clicked on By.name: login
+2023-02-20 19:41:55 INFO  UserTests:52 - verifyDashboardTest() test started
+2023-02-20 19:41:56 INFO  UserTests:61 - verifyOrdersTest() test started
+2023-02-20 19:42:57 INFO  UserTests:71 - verifyAccountDetailsTest() test started
+2023-02-20 19:43:59 INFO  UserTests:81 - verifyAddressesTest() test started
+2023-02-20 19:45:00 INFO  UserTests:92 - verifySignOutTest() test started

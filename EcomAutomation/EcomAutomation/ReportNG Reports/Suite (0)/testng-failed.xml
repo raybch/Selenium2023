@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Failed suite [Suite (0)]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="1" parallel="tests" name="Search-0(failed)" verbose="0">
+    <parameter name="platform" value="0"/>
+    <classes>
+      <class name="tests.SearchTests">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifySearchTest"/>
+          <include name="startUp"/>
+        </methods>
+      </class> <!-- tests.SearchTests -->
+    </classes>
+  </test> <!-- Search-0(failed) -->
+</suite> <!-- Failed suite [Suite (0)] -->

@@ -1,0 +1,2624 @@
+# Created at 2023-02-20T20:35:21.467
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '[[1;34mINFO[0;39m] Introducing BrowserStack Test Observability with enhanced debugging & insights for your tests. Please visit https://observability.browserstack.com to get access.'.
+java.lang.IllegalArgumentException: Stream stdin corrupted. Expected comma after third character in command '[[1;34mINFO[0;39m] Introducing BrowserStack Test Observability with enhanced debugging & insights for your tests. Please visit https://observability.browserstack.com to get access.'.
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient$OperationalData.<init>(ForkClient.java:507)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.processLine(ForkClient.java:210)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.consumeLine(ForkClient.java:177)
+	at org.apache.maven.plugin.surefire.booterclient.output.ThreadedStreamConsumer$Pumper.run(ThreadedStreamConsumer.java:88)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+
+# Created at 2023-02-20T20:35:45.871
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:398)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+
+# Created at 2023-02-20T20:35:46.953
+Unexpected IOException with stream: Feb 20, 2023 8:35:46 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+
+
+# Created at 2023-02-20T20:35:46.958
+Unexpected IOException: 8,1,tests.CartTests,startUp(tests.CartTests),null,Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.\000ABuild info: version: '4.1.4'\002C revision: '535d840ee2'\000ASystem info: host: 'LAPTOP-NA2LMEKS'\002C ip: '172.18.16.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '17.0.1'\000ADriver info: org.openqa.selenium.remote.RemoteWebDriver\000ACommand: [null\002C newSession {capabilities=[Capabilities {browserName: Chrome\002C browserVersion: 103.0\002C bstack:options: {accessKey: To328gPDnEhpECcnw5JM\002C browser: Chrome\002C browserName: Chrome\002C browserVersion: 103.0\002C browserstackSDK: testng-javaagent/1.2.0\002C buildIdentifier: #7\002C buildName: browserstack build\002C consoleLogs: errors\002C debug: false\002C hostName: LAPTOP-NA2LMEKS\002C local: true\002C localIdentifier: 20_Feb_2035_LAPTOP_NA2LMEKS...\002C networkLogs: false\002C os: Windows\002C osVersion: 11\002C projectName: BrowserStack Samples\002C source: testng:archetype-setup:v1.5\002C userName: ryan_WNOhwP}}]\002C desiredCapabilities=Capabilities {browserName: Chrome\002C browserVersion: 103.0\002C bstack:options: {accessKey: To328gPDnEhpECcnw5JM\002C browser: Chrome\002C browserName: Chrome\002C browserVersion: 103.0\002C browserstackSDK: testng-javaagent/1.2.0\002C buildIdentifier: #7\002C buildName: browserstack build\002C consoleLogs: errors\002C debug: false\002C hostName: LAPTOP-NA2LMEKS\002C local: true\002C localIdentifier: 20_Feb_2035_LAPTOP_NA2LMEKS...\002C networkLogs: false\002C os: Windows\002C osVersion: 11\002C projectName: BrowserStack Samples\002C source: testng:archetype-setup:v1.5\002C userName: ryan_WNOhwP}}}]\000ACapabilities {},null,Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.\000ABuild info: version: '4.1.4'\002C revision: '535d840ee2'\000ASystem info: host: 'LAPTOP-NA2LMEKS'\002C ip: '172.18.16.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '17.0.1'\000ADriver info: org.openqa.selenium.remote.RemoteWebDriver\000ACommand: [null\002C newSession {capabilities=[Capabilities {browserName: Chrome\002C browserVersion: 103.0\002C bstack:options: {accessKey: To328gPDnEhpECcnw5JM\002C browser: Chrome\002C browserName: Chrome\002C browserVersion: 103.0\002C browserstackSDK: testng-javaagent/1.2.0\002C buildIdentifier: #7\002C buildName: browserstack build\002C consoleLogs: errors\002C debug: false\002C hostName: LAPTOP-NA2LMEKS\002C local: true\002C localIdentifier: 20_Feb_2035_LAPTOP_NA2LMEKS...\002C networkLogs: false\002C os: Windows\002C osVersion: 11\002C projectName: BrowserStack Samples\002C source: testng:archetype-setup:v1.5\002C userName: ryan_WNOhwP}}]\002C desiredCapabilities=Capabilities {browserName: Chrome\002C browserVersion: 103.0\002C bstack:options: {accessKey: To328gPDnEhpECcnw5JM\002C browser: Chrome\002C browserName: Chrome\002C browserVersion: 103.0\002C browserstackSDK: testng-javaagent/1.2.0\002C buildIdentifier: #7\002C buildName: browserstack build\002C consoleLogs: errors\002C debug: false\002C hostName: LAPTOP-NA2LMEKS\002C local: true\002C localIdentifier: 20_Feb_2035_LAPTOP_NA2LMEKS...\002C networkLogs: false\002C os: Windows\002C osVersion: 11\002C projectName: BrowserStack Samples\002C source: testng:archetype-setup:v1.5\002C userName: ryan_WNOhwP}}}]\000ACapabilities {},CartTests.startUp:37 \00BB SessionNotCreated Could not start a new session. Possib...,org.openqa.selenium.SessionNotCreatedException: \000ACould not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.\000ABuild info: version: '4.1.4'\002C revision: '535d840ee2'\000ASystem info: host: 'LAPTOP-NA2LMEKS'\002C ip: '172.18.16.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '17.0.1'\000ADriver info: org.openqa.selenium.remote.RemoteWebDriver\000ACommand: [null\002C newSession {capabilities=[Capabilities {browserName: Chrome\002C browserVersion: 103.0\002C bstack:options: {accessKey: To328gPDnEhpECcnw5JM\002C browser: Chrome\002C browserName: Chrome\002C browserVersion: 103.0\002C browserstackSDK: testng-javaagent/1.2.0\002C buildIdentifier: #7\002C buildName: browserstack build\002C consoleLogs: errors\002C debug: false\002C hostName: LAPTOP-NA2LMEKS\002C local: true\002C localIdentifier: 20_Feb_2035_LAPTOP_NA2LMEKS...\002C networkLogs: false\002C os: Windows\002C osVersion: 11\002C projectName: BrowserStack Samples\002C source: testng:archetype-setup:v1.5\002C userName: ryan_WNOhwP}}]\002C desiredCapabilities=Capabilities {browserName: Chrome\002C browserVersion: 103.0\002C bstack:options: {accessKey: To328gPDnEhpECcnw5JM\002C browser: Chrome\002C browserName: Chrome\002C browserVersion: 103.0\002C browserstackSDK: testng-javaagent/1.2.0\002C buildIdentifier: #7\002C buildName: browserstack build\002C consoleLogs: errors\002C debug: false\002C hostName: LAPTOP-NA2LMEKS\002C local: true\002C localIdentifier: 20_Feb_2035_LAPTOP_NA2LMEKS...\002C networkLogs: false\002C os: Windows\002C osVersion: 11\002C projectName: BrowserStack Samples\002C source: testng:archetype-setup:v1.5\002C userName: ryan_WNOhwP}}}]\000ACapabilities {}\000A\0009at tests.CartTests.startUp(CartTests.java:37)\000ACaused by: java.lang.NoSuchMethodError: 'com.google.common.collect.ImmutableMap com.google.common.collect.ImmutableMap.of(java.lang.Object\002C java.lang.Object\002C java.lang.Object\002C java.lang.Object\002C java.lang.Object\002C java.lang.Object\002C java.lang.Object\002C java.lang.Object\002C java.lang.Object\002C java.lang.Object\002C java.lang.Object\002C java.lang.Object)'\000A\0009at tests.CartTests.startUp(CartTests.java:37)\000A
+
+
+# Created at 2023-02-20T20:35:46.960
+Unexpected IOException with stream: class name: CartTests with instance id :null
+
+# Created at 2023-02-20T20:35:46.960
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:46.961
+Unexpected IOException: 5,1,tests.CartTests,verifyCartTest(tests.CartTests),tests.CartTests,null,null
+
+
+# Created at 2023-02-20T20:35:46.962
+Unexpected IOException with stream: D:\Projects\EcomAutomation\Extent Reports\Skip Screenshots\
+
+# Created at 2023-02-20T20:35:46.964
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:46.965
+Unexpected IOException with stream: verifyCartTest
+
+# Created at 2023-02-20T20:35:46.966
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:46.967
+Unexpected IOException with stream: null
+
+# Created at 2023-02-20T20:35:46.968
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:46.969
+Unexpected IOException with stream: java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "d" is null
+
+# Created at 2023-02-20T20:35:46.970
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:46.971
+Unexpected IOException with stream: 	at listner.ReportListener.takeScreenShot(ReportListener.java:199)
+
+# Created at 2023-02-20T20:35:46.971
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:46.971
+Unexpected IOException with stream: 	at listner.ReportListener.onTestSkipped(ReportListener.java:139)
+
+# Created at 2023-02-20T20:35:46.972
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:46.973
+Unexpected IOException with stream: 	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:87)
+
+# Created at 2023-02-20T20:35:46.974
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:46.974
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:219)
+
+# Created at 2023-02-20T20:35:46.975
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:46.975
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.invokeListenersForSkippedTestResult(TestInvoker.java:447)
+
+# Created at 2023-02-20T20:35:46.976
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:46.976
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:545)
+
+# Created at 2023-02-20T20:35:46.977
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:46.978
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+
+# Created at 2023-02-20T20:35:46.978
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:46.979
+Unexpected IOException with stream: 	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+
+# Created at 2023-02-20T20:35:46.979
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:46.981
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+
+# Created at 2023-02-20T20:35:46.982
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:46.983
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+
+# Created at 2023-02-20T20:35:46.983
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:46.984
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+
+# Created at 2023-02-20T20:35:46.986
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:46.987
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+
+# Created at 2023-02-20T20:35:46.988
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:46.989
+Unexpected IOException with stream: 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+# Created at 2023-02-20T20:35:46.989
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:46.990
+Unexpected IOException with stream: 	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+
+# Created at 2023-02-20T20:35:46.990
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:46.991
+Unexpected IOException with stream: 	at org.testng.TestRunner.run(TestRunner.java:596)
+
+# Created at 2023-02-20T20:35:46.991
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:46.992
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+
+# Created at 2023-02-20T20:35:46.992
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:46.993
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+
+# Created at 2023-02-20T20:35:46.993
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:46.994
+Unexpected IOException with stream: 	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+
+# Created at 2023-02-20T20:35:46.994
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:46.995
+Unexpected IOException with stream: 	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+
+# Created at 2023-02-20T20:35:46.995
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:46.995
+Unexpected IOException with stream: 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+
+# Created at 2023-02-20T20:35:46.995
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:46.997
+Unexpected IOException with stream: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+
+# Created at 2023-02-20T20:35:46.998
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:46.999
+Unexpected IOException with stream: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+
+# Created at 2023-02-20T20:35:46.999
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.000
+Unexpected IOException with stream: 	at java.base/java.lang.Thread.run(Thread.java:833)
+
+# Created at 2023-02-20T20:35:47.000
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.002
+Unexpected IOException: 9,1,tests.CartTests,verifyCartTest(tests.CartTests),null,Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.\000ABuild info: version: '4.1.4'\002C revision: '535d840ee2'\000ASystem info: host: 'LAPTOP-NA2LMEKS'\002C ip: '172.18.16.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '17.0.1'\000ADriver info: org.openqa.selenium.remote.RemoteWebDriver\000ACommand: [null\002C newSession {capabilities=[Capabilities {browserName: Chrome\002C browserVersion: 103.0\002C bstack:options: {accessKey: To328gPDnEhpECcnw5JM\002C browser: Chrome\002C browserName: Chrome\002C browserVersion: 103.0\002C browserstackSDK: testng-javaagent/1.2.0\002C buildIdentifier: #7\002C buildName: browserstack build\002C consoleLogs: errors\002C debug: false\002C hostName: LAPTOP-NA2LMEKS\002C local: true\002C localIdentifier: 20_Feb_2035_LAPTOP_NA2LMEKS...\002C networkLogs: false\002C os: Windows\002C osVersion: 11\002C projectName: BrowserStack Samples\002C source: testng:archetype-setup:v1.5\002C userName: ryan_WNOhwP}}]\002C desiredCapabilities=Capabilities {browserName: Chrome\002C browserVersion: 103.0\002C bstack:options: {accessKey: To328gPDnEhpECcnw5JM\002C browser: Chrome\002C browserName: Chrome\002C browserVersion: 103.0\002C browserstackSDK: testng-javaagent/1.2.0\002C buildIdentifier: #7\002C buildName: browserstack build\002C consoleLogs: errors\002C debug: false\002C hostName: LAPTOP-NA2LMEKS\002C local: true\002C localIdentifier: 20_Feb_2035_LAPTOP_NA2LMEKS...\002C networkLogs: false\002C os: Windows\002C osVersion: 11\002C projectName: BrowserStack Samples\002C source: testng:archetype-setup:v1.5\002C userName: ryan_WNOhwP}}}]\000ACapabilities {},null
+
+
+# Created at 2023-02-20T20:35:47.003
+Unexpected IOException with stream: class name: CartTests with instance id :null
+
+# Created at 2023-02-20T20:35:47.004
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.004
+Unexpected IOException: 5,1,tests.CartTests,verifyCheckoutTest(tests.CartTests),tests.CartTests,null,null
+
+
+# Created at 2023-02-20T20:35:47.005
+Unexpected IOException with stream: D:\Projects\EcomAutomation\Extent Reports\Skip Screenshots\
+
+# Created at 2023-02-20T20:35:47.005
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.005
+Unexpected IOException with stream: verifyCheckoutTest
+
+# Created at 2023-02-20T20:35:47.006
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.006
+Unexpected IOException with stream: null
+
+# Created at 2023-02-20T20:35:47.007
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.007
+Unexpected IOException with stream: java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "d" is null
+
+# Created at 2023-02-20T20:35:47.007
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.008
+Unexpected IOException with stream: 	at listner.ReportListener.takeScreenShot(ReportListener.java:199)
+
+# Created at 2023-02-20T20:35:47.008
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.009
+Unexpected IOException with stream: 	at listner.ReportListener.onTestSkipped(ReportListener.java:139)
+
+# Created at 2023-02-20T20:35:47.009
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.009
+Unexpected IOException with stream: 	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:87)
+
+# Created at 2023-02-20T20:35:47.010
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.010
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:219)
+
+# Created at 2023-02-20T20:35:47.010
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.011
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.invokeListenersForSkippedTestResult(TestInvoker.java:447)
+
+# Created at 2023-02-20T20:35:47.011
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.012
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:105)
+
+# Created at 2023-02-20T20:35:47.012
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.013
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+
+# Created at 2023-02-20T20:35:47.014
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.016
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+
+# Created at 2023-02-20T20:35:47.016
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.017
+Unexpected IOException with stream: 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+# Created at 2023-02-20T20:35:47.018
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.019
+Unexpected IOException with stream: 	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+
+# Created at 2023-02-20T20:35:47.019
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.020
+Unexpected IOException with stream: 	at org.testng.TestRunner.run(TestRunner.java:596)
+
+# Created at 2023-02-20T20:35:47.020
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.021
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+
+# Created at 2023-02-20T20:35:47.021
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.021
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+
+# Created at 2023-02-20T20:35:47.022
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.022
+Unexpected IOException with stream: 	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+
+# Created at 2023-02-20T20:35:47.022
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.023
+Unexpected IOException with stream: 	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+
+# Created at 2023-02-20T20:35:47.023
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.024
+Unexpected IOException with stream: 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+
+# Created at 2023-02-20T20:35:47.024
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.025
+Unexpected IOException with stream: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+
+# Created at 2023-02-20T20:35:47.025
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.026
+Unexpected IOException with stream: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+
+# Created at 2023-02-20T20:35:47.026
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.027
+Unexpected IOException with stream: 	at java.base/java.lang.Thread.run(Thread.java:833)
+
+# Created at 2023-02-20T20:35:47.027
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.028
+Unexpected IOException: 9,1,tests.CartTests,verifyCheckoutTest(tests.CartTests),null,Method CartTests.verifyCheckoutTest()[pri:0\002C instance:tests.CartTests@5eccd3b9] depends on not successfully finished methods,null
+
+
+# Created at 2023-02-20T20:35:47.031
+Unexpected IOException with stream: class name: CartTests with instance id :null
+
+# Created at 2023-02-20T20:35:47.032
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.033
+Unexpected IOException: 5,1,tests.CartTests,verifyPaymentTest(tests.CartTests),tests.CartTests,null,null
+
+
+# Created at 2023-02-20T20:35:47.034
+Unexpected IOException with stream: D:\Projects\EcomAutomation\Extent Reports\Skip Screenshots\
+
+# Created at 2023-02-20T20:35:47.034
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.035
+Unexpected IOException with stream: verifyPaymentTest
+
+# Created at 2023-02-20T20:35:47.036
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.036
+Unexpected IOException with stream: null
+
+# Created at 2023-02-20T20:35:47.036
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.037
+Unexpected IOException with stream: java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "d" is null
+
+# Created at 2023-02-20T20:35:47.038
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.038
+Unexpected IOException with stream: 	at listner.ReportListener.takeScreenShot(ReportListener.java:199)
+
+# Created at 2023-02-20T20:35:47.039
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.039
+Unexpected IOException with stream: 	at listner.ReportListener.onTestSkipped(ReportListener.java:139)
+
+# Created at 2023-02-20T20:35:47.039
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.040
+Unexpected IOException with stream: 	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:87)
+
+# Created at 2023-02-20T20:35:47.040
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.041
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:219)
+
+# Created at 2023-02-20T20:35:47.041
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.042
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.invokeListenersForSkippedTestResult(TestInvoker.java:447)
+
+# Created at 2023-02-20T20:35:47.042
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.042
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:105)
+
+# Created at 2023-02-20T20:35:47.043
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.043
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+
+# Created at 2023-02-20T20:35:47.043
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.043
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+
+# Created at 2023-02-20T20:35:47.044
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.044
+Unexpected IOException with stream: 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+# Created at 2023-02-20T20:35:47.044
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.051
+Unexpected IOException with stream: 	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+
+# Created at 2023-02-20T20:35:47.052
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.052
+Unexpected IOException with stream: 	at org.testng.TestRunner.run(TestRunner.java:596)
+
+# Created at 2023-02-20T20:35:47.052
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.053
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+
+# Created at 2023-02-20T20:35:47.053
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.053
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+
+# Created at 2023-02-20T20:35:47.054
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.054
+Unexpected IOException with stream: 	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+
+# Created at 2023-02-20T20:35:47.054
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.055
+Unexpected IOException with stream: 	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+
+# Created at 2023-02-20T20:35:47.055
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.055
+Unexpected IOException with stream: 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+
+# Created at 2023-02-20T20:35:47.055
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.056
+Unexpected IOException with stream: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+
+# Created at 2023-02-20T20:35:47.056
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.056
+Unexpected IOException with stream: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+
+# Created at 2023-02-20T20:35:47.057
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.057
+Unexpected IOException with stream: 	at java.base/java.lang.Thread.run(Thread.java:833)
+
+# Created at 2023-02-20T20:35:47.058
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.059
+Unexpected IOException: 9,1,tests.CartTests,verifyPaymentTest(tests.CartTests),null,Method CartTests.verifyPaymentTest()[pri:0\002C instance:tests.CartTests@5eccd3b9] depends on not successfully finished methods,null
+
+
+# Created at 2023-02-20T20:35:47.060
+Unexpected IOException with stream: class name: CartTests with instance id :null
+
+# Created at 2023-02-20T20:35:47.060
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.061
+Unexpected IOException: 5,1,tests.CartTests,verifyEmptyCartTest(tests.CartTests),tests.CartTests,null,null
+
+
+# Created at 2023-02-20T20:35:47.061
+Unexpected IOException with stream: D:\Projects\EcomAutomation\Extent Reports\Skip Screenshots\
+
+# Created at 2023-02-20T20:35:47.062
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.063
+Unexpected IOException with stream: verifyEmptyCartTest
+
+# Created at 2023-02-20T20:35:47.065
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.066
+Unexpected IOException with stream: null
+
+# Created at 2023-02-20T20:35:47.067
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.067
+Unexpected IOException with stream: java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "d" is null
+
+# Created at 2023-02-20T20:35:47.068
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.069
+Unexpected IOException with stream: 	at listner.ReportListener.takeScreenShot(ReportListener.java:199)
+
+# Created at 2023-02-20T20:35:47.069
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.070
+Unexpected IOException with stream: 	at listner.ReportListener.onTestSkipped(ReportListener.java:139)
+
+# Created at 2023-02-20T20:35:47.070
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.071
+Unexpected IOException with stream: 	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:87)
+
+# Created at 2023-02-20T20:35:47.071
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.072
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:219)
+
+# Created at 2023-02-20T20:35:47.072
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.072
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.invokeListenersForSkippedTestResult(TestInvoker.java:447)
+
+# Created at 2023-02-20T20:35:47.073
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.073
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:105)
+
+# Created at 2023-02-20T20:35:47.074
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.074
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+
+# Created at 2023-02-20T20:35:47.074
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.075
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+
+# Created at 2023-02-20T20:35:47.075
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.076
+Unexpected IOException with stream: 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+# Created at 2023-02-20T20:35:47.076
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.077
+Unexpected IOException with stream: 	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+
+# Created at 2023-02-20T20:35:47.077
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.078
+Unexpected IOException with stream: 	at org.testng.TestRunner.run(TestRunner.java:596)
+
+# Created at 2023-02-20T20:35:47.078
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.079
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+
+# Created at 2023-02-20T20:35:47.081
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.082
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+
+# Created at 2023-02-20T20:35:47.082
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.083
+Unexpected IOException with stream: 	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+
+# Created at 2023-02-20T20:35:47.084
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.084
+Unexpected IOException with stream: 	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+
+# Created at 2023-02-20T20:35:47.085
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.085
+Unexpected IOException with stream: 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+
+# Created at 2023-02-20T20:35:47.086
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.087
+Unexpected IOException with stream: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+
+# Created at 2023-02-20T20:35:47.087
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.088
+Unexpected IOException with stream: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+
+# Created at 2023-02-20T20:35:47.088
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.089
+Unexpected IOException with stream: 	at java.base/java.lang.Thread.run(Thread.java:833)
+
+# Created at 2023-02-20T20:35:47.089
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:47.090
+Unexpected IOException: 9,1,tests.CartTests,verifyEmptyCartTest(tests.CartTests),null,Method CartTests.verifyEmptyCartTest()[pri:0\002C instance:tests.CartTests@5eccd3b9] depends on not successfully finished methods,null
+
+
+# Created at 2023-02-20T20:35:47.091
+Unexpected IOException: 8,1,tests.CartTests,tearDown(tests.CartTests),null,Cannot invoke "org.openqa.selenium.remote.RemoteWebDriver.close()" because "this.driver" is null,null,Cannot invoke "org.openqa.selenium.remote.RemoteWebDriver.close()" because "this.driver" is null,CartTests.tearDown:95 NullPointer Cannot invoke "org.openqa.selenium.remote.Re...,java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.remote.RemoteWebDriver.close()" because "this.driver" is null\000A\0009at tests.CartTests.tearDown(CartTests.java:95)\000A
+
+
+# Created at 2023-02-20T20:35:47.223
+Unexpected IOException with stream: listener before class
+
+# Created at 2023-02-20T20:35:47.224
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.299
+Unexpected IOException with stream: Feb 20, 2023 8:35:57 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+
+
+# Created at 2023-02-20T20:35:57.305
+Unexpected IOException: 8,1,tests.SmokeTests,startUp(tests.SmokeTests),null,Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.\000ABuild info: version: '4.1.4'\002C revision: '535d840ee2'\000ASystem info: host: 'LAPTOP-NA2LMEKS'\002C ip: '172.18.16.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '17.0.1'\000ADriver info: org.openqa.selenium.remote.RemoteWebDriver\000ACommand: [null\002C newSession {capabilities=[Capabilities {browserName: Chrome\002C browserVersion: 103.0\002C bstack:options: {accessKey: To328gPDnEhpECcnw5JM\002C browser: Chrome\002C browserName: Chrome\002C browserVersion: 103.0\002C browserstackSDK: testng-javaagent/1.2.0\002C buildIdentifier: #7\002C buildName: browserstack build\002C consoleLogs: errors\002C debug: false\002C hostName: LAPTOP-NA2LMEKS\002C local: true\002C localIdentifier: 20_Feb_2035_LAPTOP_NA2LMEKS...\002C networkLogs: false\002C os: Windows\002C osVersion: 11\002C projectName: BrowserStack Samples\002C source: testng:archetype-setup:v1.5\002C userName: ryan_WNOhwP}}]\002C desiredCapabilities=Capabilities {browserName: Chrome\002C browserVersion: 103.0\002C bstack:options: {accessKey: To328gPDnEhpECcnw5JM\002C browser: Chrome\002C browserName: Chrome\002C browserVersion: 103.0\002C browserstackSDK: testng-javaagent/1.2.0\002C buildIdentifier: #7\002C buildName: browserstack build\002C consoleLogs: errors\002C debug: false\002C hostName: LAPTOP-NA2LMEKS\002C local: true\002C localIdentifier: 20_Feb_2035_LAPTOP_NA2LMEKS...\002C networkLogs: false\002C os: Windows\002C osVersion: 11\002C projectName: BrowserStack Samples\002C source: testng:archetype-setup:v1.5\002C userName: ryan_WNOhwP}}}]\000ACapabilities {},null,Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.\000ABuild info: version: '4.1.4'\002C revision: '535d840ee2'\000ASystem info: host: 'LAPTOP-NA2LMEKS'\002C ip: '172.18.16.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '17.0.1'\000ADriver info: org.openqa.selenium.remote.RemoteWebDriver\000ACommand: [null\002C newSession {capabilities=[Capabilities {browserName: Chrome\002C browserVersion: 103.0\002C bstack:options: {accessKey: To328gPDnEhpECcnw5JM\002C browser: Chrome\002C browserName: Chrome\002C browserVersion: 103.0\002C browserstackSDK: testng-javaagent/1.2.0\002C buildIdentifier: #7\002C buildName: browserstack build\002C consoleLogs: errors\002C debug: false\002C hostName: LAPTOP-NA2LMEKS\002C local: true\002C localIdentifier: 20_Feb_2035_LAPTOP_NA2LMEKS...\002C networkLogs: false\002C os: Windows\002C osVersion: 11\002C projectName: BrowserStack Samples\002C source: testng:archetype-setup:v1.5\002C userName: ryan_WNOhwP}}]\002C desiredCapabilities=Capabilities {browserName: Chrome\002C browserVersion: 103.0\002C bstack:options: {accessKey: To328gPDnEhpECcnw5JM\002C browser: Chrome\002C browserName: Chrome\002C browserVersion: 103.0\002C browserstackSDK: testng-javaagent/1.2.0\002C buildIdentifier: #7\002C buildName: browserstack build\002C consoleLogs: errors\002C debug: false\002C hostName: LAPTOP-NA2LMEKS\002C local: true\002C localIdentifier: 20_Feb_2035_LAPTOP_NA2LMEKS...\002C networkLogs: false\002C os: Windows\002C osVersion: 11\002C projectName: BrowserStack Samples\002C source: testng:archetype-setup:v1.5\002C userName: ryan_WNOhwP}}}]\000ACapabilities {},SmokeTests.startUp:34 \00BB SessionNotCreated Could not start a new session. Possi...,org.openqa.selenium.SessionNotCreatedException: \000ACould not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.\000ABuild info: version: '4.1.4'\002C revision: '535d840ee2'\000ASystem info: host: 'LAPTOP-NA2LMEKS'\002C ip: '172.18.16.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '17.0.1'\000ADriver info: org.openqa.selenium.remote.RemoteWebDriver\000ACommand: [null\002C newSession {capabilities=[Capabilities {browserName: Chrome\002C browserVersion: 103.0\002C bstack:options: {accessKey: To328gPDnEhpECcnw5JM\002C browser: Chrome\002C browserName: Chrome\002C browserVersion: 103.0\002C browserstackSDK: testng-javaagent/1.2.0\002C buildIdentifier: #7\002C buildName: browserstack build\002C consoleLogs: errors\002C debug: false\002C hostName: LAPTOP-NA2LMEKS\002C local: true\002C localIdentifier: 20_Feb_2035_LAPTOP_NA2LMEKS...\002C networkLogs: false\002C os: Windows\002C osVersion: 11\002C projectName: BrowserStack Samples\002C source: testng:archetype-setup:v1.5\002C userName: ryan_WNOhwP}}]\002C desiredCapabilities=Capabilities {browserName: Chrome\002C browserVersion: 103.0\002C bstack:options: {accessKey: To328gPDnEhpECcnw5JM\002C browser: Chrome\002C browserName: Chrome\002C browserVersion: 103.0\002C browserstackSDK: testng-javaagent/1.2.0\002C buildIdentifier: #7\002C buildName: browserstack build\002C consoleLogs: errors\002C debug: false\002C hostName: LAPTOP-NA2LMEKS\002C local: true\002C localIdentifier: 20_Feb_2035_LAPTOP_NA2LMEKS...\002C networkLogs: false\002C os: Windows\002C osVersion: 11\002C projectName: BrowserStack Samples\002C source: testng:archetype-setup:v1.5\002C userName: ryan_WNOhwP}}}]\000ACapabilities {}\000A\0009at tests.SmokeTests.startUp(SmokeTests.java:34)\000ACaused by: java.lang.NoSuchMethodError: 'com.google.common.collect.ImmutableMap com.google.common.collect.ImmutableMap.of(java.lang.Object\002C java.lang.Object\002C java.lang.Object\002C java.lang.Object\002C java.lang.Object\002C java.lang.Object\002C java.lang.Object\002C java.lang.Object\002C java.lang.Object\002C java.lang.Object\002C java.lang.Object\002C java.lang.Object)'\000A\0009at tests.SmokeTests.startUp(SmokeTests.java:34)\000A
+
+
+# Created at 2023-02-20T20:35:57.307
+Unexpected IOException with stream: class name: SmokeTests with instance id :null
+
+# Created at 2023-02-20T20:35:57.307
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.309
+Unexpected IOException: 5,1,tests.SmokeTests,verifyAboutUsTest(tests.SmokeTests),tests.SmokeTests,null,null
+
+
+# Created at 2023-02-20T20:35:57.310
+Unexpected IOException with stream: D:\Projects\EcomAutomation\Extent Reports\Skip Screenshots\
+
+# Created at 2023-02-20T20:35:57.311
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.312
+Unexpected IOException with stream: verifyAboutUsTest
+
+# Created at 2023-02-20T20:35:57.312
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.313
+Unexpected IOException with stream: null
+
+# Created at 2023-02-20T20:35:57.313
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.314
+Unexpected IOException with stream: java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "d" is null
+
+# Created at 2023-02-20T20:35:57.315
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.315
+Unexpected IOException with stream: 	at listner.ReportListener.takeScreenShot(ReportListener.java:199)
+
+# Created at 2023-02-20T20:35:57.316
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.316
+Unexpected IOException with stream: 	at listner.ReportListener.onTestSkipped(ReportListener.java:139)
+
+# Created at 2023-02-20T20:35:57.317
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.317
+Unexpected IOException with stream: 	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:87)
+
+# Created at 2023-02-20T20:35:57.319
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.320
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:219)
+
+# Created at 2023-02-20T20:35:57.321
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.322
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.invokeListenersForSkippedTestResult(TestInvoker.java:447)
+
+# Created at 2023-02-20T20:35:57.322
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.323
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:545)
+
+# Created at 2023-02-20T20:35:57.324
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.325
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+
+# Created at 2023-02-20T20:35:57.325
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.326
+Unexpected IOException with stream: 	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+
+# Created at 2023-02-20T20:35:57.326
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.327
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+
+# Created at 2023-02-20T20:35:57.327
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.327
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+
+# Created at 2023-02-20T20:35:57.328
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.328
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+
+# Created at 2023-02-20T20:35:57.329
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.329
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+
+# Created at 2023-02-20T20:35:57.329
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.330
+Unexpected IOException with stream: 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+# Created at 2023-02-20T20:35:57.330
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.330
+Unexpected IOException with stream: 	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+
+# Created at 2023-02-20T20:35:57.331
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.331
+Unexpected IOException with stream: 	at org.testng.TestRunner.run(TestRunner.java:596)
+
+# Created at 2023-02-20T20:35:57.331
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.332
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+
+# Created at 2023-02-20T20:35:57.332
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.332
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+
+# Created at 2023-02-20T20:35:57.332
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.333
+Unexpected IOException with stream: 	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+
+# Created at 2023-02-20T20:35:57.333
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.333
+Unexpected IOException with stream: 	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+
+# Created at 2023-02-20T20:35:57.334
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.334
+Unexpected IOException with stream: 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+
+# Created at 2023-02-20T20:35:57.334
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.335
+Unexpected IOException with stream: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+
+# Created at 2023-02-20T20:35:57.336
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.337
+Unexpected IOException with stream: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+
+# Created at 2023-02-20T20:35:57.338
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.338
+Unexpected IOException with stream: 	at java.base/java.lang.Thread.run(Thread.java:833)
+
+# Created at 2023-02-20T20:35:57.338
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.339
+Unexpected IOException: 9,1,tests.SmokeTests,verifyAboutUsTest(tests.SmokeTests),null,Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.\000ABuild info: version: '4.1.4'\002C revision: '535d840ee2'\000ASystem info: host: 'LAPTOP-NA2LMEKS'\002C ip: '172.18.16.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '17.0.1'\000ADriver info: org.openqa.selenium.remote.RemoteWebDriver\000ACommand: [null\002C newSession {capabilities=[Capabilities {browserName: Chrome\002C browserVersion: 103.0\002C bstack:options: {accessKey: To328gPDnEhpECcnw5JM\002C browser: Chrome\002C browserName: Chrome\002C browserVersion: 103.0\002C browserstackSDK: testng-javaagent/1.2.0\002C buildIdentifier: #7\002C buildName: browserstack build\002C consoleLogs: errors\002C debug: false\002C hostName: LAPTOP-NA2LMEKS\002C local: true\002C localIdentifier: 20_Feb_2035_LAPTOP_NA2LMEKS...\002C networkLogs: false\002C os: Windows\002C osVersion: 11\002C projectName: BrowserStack Samples\002C source: testng:archetype-setup:v1.5\002C userName: ryan_WNOhwP}}]\002C desiredCapabilities=Capabilities {browserName: Chrome\002C browserVersion: 103.0\002C bstack:options: {accessKey: To328gPDnEhpECcnw5JM\002C browser: Chrome\002C browserName: Chrome\002C browserVersion: 103.0\002C browserstackSDK: testng-javaagent/1.2.0\002C buildIdentifier: #7\002C buildName: browserstack build\002C consoleLogs: errors\002C debug: false\002C hostName: LAPTOP-NA2LMEKS\002C local: true\002C localIdentifier: 20_Feb_2035_LAPTOP_NA2LMEKS...\002C networkLogs: false\002C os: Windows\002C osVersion: 11\002C projectName: BrowserStack Samples\002C source: testng:archetype-setup:v1.5\002C userName: ryan_WNOhwP}}}]\000ACapabilities {},null
+
+
+# Created at 2023-02-20T20:35:57.340
+Unexpected IOException with stream: class name: SmokeTests with instance id :null
+
+# Created at 2023-02-20T20:35:57.340
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.341
+Unexpected IOException: 5,1,tests.SmokeTests,verifyBlogTest(tests.SmokeTests),tests.SmokeTests,null,null
+
+
+# Created at 2023-02-20T20:35:57.341
+Unexpected IOException with stream: D:\Projects\EcomAutomation\Extent Reports\Skip Screenshots\
+
+# Created at 2023-02-20T20:35:57.341
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.342
+Unexpected IOException with stream: verifyBlogTest
+
+# Created at 2023-02-20T20:35:57.342
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.342
+Unexpected IOException with stream: null
+
+# Created at 2023-02-20T20:35:57.342
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.343
+Unexpected IOException with stream: java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "d" is null
+
+# Created at 2023-02-20T20:35:57.343
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.343
+Unexpected IOException with stream: 	at listner.ReportListener.takeScreenShot(ReportListener.java:199)
+
+# Created at 2023-02-20T20:35:57.343
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.344
+Unexpected IOException with stream: 	at listner.ReportListener.onTestSkipped(ReportListener.java:139)
+
+# Created at 2023-02-20T20:35:57.344
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.344
+Unexpected IOException with stream: 	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:87)
+
+# Created at 2023-02-20T20:35:57.344
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.344
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:219)
+
+# Created at 2023-02-20T20:35:57.345
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.345
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.invokeListenersForSkippedTestResult(TestInvoker.java:447)
+
+# Created at 2023-02-20T20:35:57.345
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.345
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:545)
+
+# Created at 2023-02-20T20:35:57.345
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.346
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+
+# Created at 2023-02-20T20:35:57.346
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.346
+Unexpected IOException with stream: 	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+
+# Created at 2023-02-20T20:35:57.346
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.347
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+
+# Created at 2023-02-20T20:35:57.347
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.347
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+
+# Created at 2023-02-20T20:35:57.347
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.348
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+
+# Created at 2023-02-20T20:35:57.348
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.348
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+
+# Created at 2023-02-20T20:35:57.348
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.348
+Unexpected IOException with stream: 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+# Created at 2023-02-20T20:35:57.349
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.349
+Unexpected IOException with stream: 	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+
+# Created at 2023-02-20T20:35:57.349
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.349
+Unexpected IOException with stream: 	at org.testng.TestRunner.run(TestRunner.java:596)
+
+# Created at 2023-02-20T20:35:57.349
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.350
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+
+# Created at 2023-02-20T20:35:57.350
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.350
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+
+# Created at 2023-02-20T20:35:57.350
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.350
+Unexpected IOException with stream: 	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+
+# Created at 2023-02-20T20:35:57.351
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.351
+Unexpected IOException with stream: 	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+
+# Created at 2023-02-20T20:35:57.351
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.352
+Unexpected IOException with stream: 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+
+# Created at 2023-02-20T20:35:57.353
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.353
+Unexpected IOException with stream: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+
+# Created at 2023-02-20T20:35:57.354
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.354
+Unexpected IOException with stream: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+
+# Created at 2023-02-20T20:35:57.354
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.354
+Unexpected IOException with stream: 	at java.base/java.lang.Thread.run(Thread.java:833)
+
+# Created at 2023-02-20T20:35:57.355
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.356
+Unexpected IOException: 9,1,tests.SmokeTests,verifyBlogTest(tests.SmokeTests),null,Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.\000ABuild info: version: '4.1.4'\002C revision: '535d840ee2'\000ASystem info: host: 'LAPTOP-NA2LMEKS'\002C ip: '172.18.16.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '17.0.1'\000ADriver info: org.openqa.selenium.remote.RemoteWebDriver\000ACommand: [null\002C newSession {capabilities=[Capabilities {browserName: Chrome\002C browserVersion: 103.0\002C bstack:options: {accessKey: To328gPDnEhpECcnw5JM\002C browser: Chrome\002C browserName: Chrome\002C browserVersion: 103.0\002C browserstackSDK: testng-javaagent/1.2.0\002C buildIdentifier: #7\002C buildName: browserstack build\002C consoleLogs: errors\002C debug: false\002C hostName: LAPTOP-NA2LMEKS\002C local: true\002C localIdentifier: 20_Feb_2035_LAPTOP_NA2LMEKS...\002C networkLogs: false\002C os: Windows\002C osVersion: 11\002C projectName: BrowserStack Samples\002C source: testng:archetype-setup:v1.5\002C userName: ryan_WNOhwP}}]\002C desiredCapabilities=Capabilities {browserName: Chrome\002C browserVersion: 103.0\002C bstack:options: {accessKey: To328gPDnEhpECcnw5JM\002C browser: Chrome\002C browserName: Chrome\002C browserVersion: 103.0\002C browserstackSDK: testng-javaagent/1.2.0\002C buildIdentifier: #7\002C buildName: browserstack build\002C consoleLogs: errors\002C debug: false\002C hostName: LAPTOP-NA2LMEKS\002C local: true\002C localIdentifier: 20_Feb_2035_LAPTOP_NA2LMEKS...\002C networkLogs: false\002C os: Windows\002C osVersion: 11\002C projectName: BrowserStack Samples\002C source: testng:archetype-setup:v1.5\002C userName: ryan_WNOhwP}}}]\000ACapabilities {},null
+
+
+# Created at 2023-02-20T20:35:57.356
+Unexpected IOException with stream: class name: SmokeTests with instance id :null
+
+# Created at 2023-02-20T20:35:57.357
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.357
+Unexpected IOException: 5,1,tests.SmokeTests,verifyContactTest(tests.SmokeTests),tests.SmokeTests,null,null
+
+
+# Created at 2023-02-20T20:35:57.357
+Unexpected IOException with stream: D:\Projects\EcomAutomation\Extent Reports\Skip Screenshots\
+
+# Created at 2023-02-20T20:35:57.358
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.358
+Unexpected IOException with stream: verifyContactTest
+
+# Created at 2023-02-20T20:35:57.358
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.358
+Unexpected IOException with stream: null
+
+# Created at 2023-02-20T20:35:57.359
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.359
+Unexpected IOException with stream: java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "d" is null
+
+# Created at 2023-02-20T20:35:57.359
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.359
+Unexpected IOException with stream: 	at listner.ReportListener.takeScreenShot(ReportListener.java:199)
+
+# Created at 2023-02-20T20:35:57.360
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.360
+Unexpected IOException with stream: 	at listner.ReportListener.onTestSkipped(ReportListener.java:139)
+
+# Created at 2023-02-20T20:35:57.360
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.361
+Unexpected IOException with stream: 	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:87)
+
+# Created at 2023-02-20T20:35:57.361
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.361
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:219)
+
+# Created at 2023-02-20T20:35:57.361
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.362
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.invokeListenersForSkippedTestResult(TestInvoker.java:447)
+
+# Created at 2023-02-20T20:35:57.362
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.362
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:545)
+
+# Created at 2023-02-20T20:35:57.362
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.363
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+
+# Created at 2023-02-20T20:35:57.363
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.363
+Unexpected IOException with stream: 	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+
+# Created at 2023-02-20T20:35:57.364
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.364
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+
+# Created at 2023-02-20T20:35:57.364
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.364
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+
+# Created at 2023-02-20T20:35:57.364
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.365
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+
+# Created at 2023-02-20T20:35:57.365
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.365
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+
+# Created at 2023-02-20T20:35:57.365
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.366
+Unexpected IOException with stream: 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+# Created at 2023-02-20T20:35:57.366
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.366
+Unexpected IOException with stream: 	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+
+# Created at 2023-02-20T20:35:57.366
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.367
+Unexpected IOException with stream: 	at org.testng.TestRunner.run(TestRunner.java:596)
+
+# Created at 2023-02-20T20:35:57.367
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.367
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+
+# Created at 2023-02-20T20:35:57.368
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.368
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+
+# Created at 2023-02-20T20:35:57.370
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.370
+Unexpected IOException with stream: 	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+
+# Created at 2023-02-20T20:35:57.370
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.371
+Unexpected IOException with stream: 	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+
+# Created at 2023-02-20T20:35:57.371
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.372
+Unexpected IOException with stream: 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+
+# Created at 2023-02-20T20:35:57.372
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.372
+Unexpected IOException with stream: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+
+# Created at 2023-02-20T20:35:57.372
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.373
+Unexpected IOException with stream: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+
+# Created at 2023-02-20T20:35:57.373
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.373
+Unexpected IOException with stream: 	at java.base/java.lang.Thread.run(Thread.java:833)
+
+# Created at 2023-02-20T20:35:57.374
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.375
+Unexpected IOException: 9,1,tests.SmokeTests,verifyContactTest(tests.SmokeTests),null,Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.\000ABuild info: version: '4.1.4'\002C revision: '535d840ee2'\000ASystem info: host: 'LAPTOP-NA2LMEKS'\002C ip: '172.18.16.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '17.0.1'\000ADriver info: org.openqa.selenium.remote.RemoteWebDriver\000ACommand: [null\002C newSession {capabilities=[Capabilities {browserName: Chrome\002C browserVersion: 103.0\002C bstack:options: {accessKey: To328gPDnEhpECcnw5JM\002C browser: Chrome\002C browserName: Chrome\002C browserVersion: 103.0\002C browserstackSDK: testng-javaagent/1.2.0\002C buildIdentifier: #7\002C buildName: browserstack build\002C consoleLogs: errors\002C debug: false\002C hostName: LAPTOP-NA2LMEKS\002C local: true\002C localIdentifier: 20_Feb_2035_LAPTOP_NA2LMEKS...\002C networkLogs: false\002C os: Windows\002C osVersion: 11\002C projectName: BrowserStack Samples\002C source: testng:archetype-setup:v1.5\002C userName: ryan_WNOhwP}}]\002C desiredCapabilities=Capabilities {browserName: Chrome\002C browserVersion: 103.0\002C bstack:options: {accessKey: To328gPDnEhpECcnw5JM\002C browser: Chrome\002C browserName: Chrome\002C browserVersion: 103.0\002C browserstackSDK: testng-javaagent/1.2.0\002C buildIdentifier: #7\002C buildName: browserstack build\002C consoleLogs: errors\002C debug: false\002C hostName: LAPTOP-NA2LMEKS\002C local: true\002C localIdentifier: 20_Feb_2035_LAPTOP_NA2LMEKS...\002C networkLogs: false\002C os: Windows\002C osVersion: 11\002C projectName: BrowserStack Samples\002C source: testng:archetype-setup:v1.5\002C userName: ryan_WNOhwP}}}]\000ACapabilities {},null
+
+
+# Created at 2023-02-20T20:35:57.375
+Unexpected IOException with stream: class name: SmokeTests with instance id :null
+
+# Created at 2023-02-20T20:35:57.376
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.376
+Unexpected IOException: 5,1,tests.SmokeTests,verifyHomeTest(tests.SmokeTests),tests.SmokeTests,null,null
+
+
+# Created at 2023-02-20T20:35:57.376
+Unexpected IOException with stream: D:\Projects\EcomAutomation\Extent Reports\Skip Screenshots\
+
+# Created at 2023-02-20T20:35:57.377
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.377
+Unexpected IOException with stream: verifyHomeTest
+
+# Created at 2023-02-20T20:35:57.377
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.377
+Unexpected IOException with stream: null
+
+# Created at 2023-02-20T20:35:57.377
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.378
+Unexpected IOException with stream: java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "d" is null
+
+# Created at 2023-02-20T20:35:57.378
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.378
+Unexpected IOException with stream: 	at listner.ReportListener.takeScreenShot(ReportListener.java:199)
+
+# Created at 2023-02-20T20:35:57.378
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.379
+Unexpected IOException with stream: 	at listner.ReportListener.onTestSkipped(ReportListener.java:139)
+
+# Created at 2023-02-20T20:35:57.379
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.379
+Unexpected IOException with stream: 	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:87)
+
+# Created at 2023-02-20T20:35:57.379
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.379
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:219)
+
+# Created at 2023-02-20T20:35:57.380
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.380
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.invokeListenersForSkippedTestResult(TestInvoker.java:447)
+
+# Created at 2023-02-20T20:35:57.380
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.380
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:545)
+
+# Created at 2023-02-20T20:35:57.380
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.381
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+
+# Created at 2023-02-20T20:35:57.381
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.381
+Unexpected IOException with stream: 	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+
+# Created at 2023-02-20T20:35:57.381
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.381
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+
+# Created at 2023-02-20T20:35:57.382
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.382
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+
+# Created at 2023-02-20T20:35:57.382
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.382
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+
+# Created at 2023-02-20T20:35:57.382
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.383
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+
+# Created at 2023-02-20T20:35:57.383
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.383
+Unexpected IOException with stream: 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+# Created at 2023-02-20T20:35:57.383
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.384
+Unexpected IOException with stream: 	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+
+# Created at 2023-02-20T20:35:57.384
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.384
+Unexpected IOException with stream: 	at org.testng.TestRunner.run(TestRunner.java:596)
+
+# Created at 2023-02-20T20:35:57.385
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.386
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+
+# Created at 2023-02-20T20:35:57.387
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.387
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+
+# Created at 2023-02-20T20:35:57.387
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.388
+Unexpected IOException with stream: 	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+
+# Created at 2023-02-20T20:35:57.388
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.388
+Unexpected IOException with stream: 	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+
+# Created at 2023-02-20T20:35:57.389
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.389
+Unexpected IOException with stream: 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+
+# Created at 2023-02-20T20:35:57.389
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.389
+Unexpected IOException with stream: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+
+# Created at 2023-02-20T20:35:57.390
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.390
+Unexpected IOException with stream: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+
+# Created at 2023-02-20T20:35:57.390
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.390
+Unexpected IOException with stream: 	at java.base/java.lang.Thread.run(Thread.java:833)
+
+# Created at 2023-02-20T20:35:57.390
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.391
+Unexpected IOException: 9,1,tests.SmokeTests,verifyHomeTest(tests.SmokeTests),null,Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.\000ABuild info: version: '4.1.4'\002C revision: '535d840ee2'\000ASystem info: host: 'LAPTOP-NA2LMEKS'\002C ip: '172.18.16.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '17.0.1'\000ADriver info: org.openqa.selenium.remote.RemoteWebDriver\000ACommand: [null\002C newSession {capabilities=[Capabilities {browserName: Chrome\002C browserVersion: 103.0\002C bstack:options: {accessKey: To328gPDnEhpECcnw5JM\002C browser: Chrome\002C browserName: Chrome\002C browserVersion: 103.0\002C browserstackSDK: testng-javaagent/1.2.0\002C buildIdentifier: #7\002C buildName: browserstack build\002C consoleLogs: errors\002C debug: false\002C hostName: LAPTOP-NA2LMEKS\002C local: true\002C localIdentifier: 20_Feb_2035_LAPTOP_NA2LMEKS...\002C networkLogs: false\002C os: Windows\002C osVersion: 11\002C projectName: BrowserStack Samples\002C source: testng:archetype-setup:v1.5\002C userName: ryan_WNOhwP}}]\002C desiredCapabilities=Capabilities {browserName: Chrome\002C browserVersion: 103.0\002C bstack:options: {accessKey: To328gPDnEhpECcnw5JM\002C browser: Chrome\002C browserName: Chrome\002C browserVersion: 103.0\002C browserstackSDK: testng-javaagent/1.2.0\002C buildIdentifier: #7\002C buildName: browserstack build\002C consoleLogs: errors\002C debug: false\002C hostName: LAPTOP-NA2LMEKS\002C local: true\002C localIdentifier: 20_Feb_2035_LAPTOP_NA2LMEKS...\002C networkLogs: false\002C os: Windows\002C osVersion: 11\002C projectName: BrowserStack Samples\002C source: testng:archetype-setup:v1.5\002C userName: ryan_WNOhwP}}}]\000ACapabilities {},null
+
+
+# Created at 2023-02-20T20:35:57.392
+Unexpected IOException with stream: class name: SmokeTests with instance id :null
+
+# Created at 2023-02-20T20:35:57.392
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.393
+Unexpected IOException: 5,1,tests.SmokeTests,verifyLogoTest(tests.SmokeTests),tests.SmokeTests,null,null
+
+
+# Created at 2023-02-20T20:35:57.393
+Unexpected IOException with stream: D:\Projects\EcomAutomation\Extent Reports\Skip Screenshots\
+
+# Created at 2023-02-20T20:35:57.393
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.393
+Unexpected IOException with stream: verifyLogoTest
+
+# Created at 2023-02-20T20:35:57.394
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.394
+Unexpected IOException with stream: null
+
+# Created at 2023-02-20T20:35:57.394
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.394
+Unexpected IOException with stream: java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "d" is null
+
+# Created at 2023-02-20T20:35:57.395
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.395
+Unexpected IOException with stream: 	at listner.ReportListener.takeScreenShot(ReportListener.java:199)
+
+# Created at 2023-02-20T20:35:57.395
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.395
+Unexpected IOException with stream: 	at listner.ReportListener.onTestSkipped(ReportListener.java:139)
+
+# Created at 2023-02-20T20:35:57.396
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.396
+Unexpected IOException with stream: 	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:87)
+
+# Created at 2023-02-20T20:35:57.396
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.396
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:219)
+
+# Created at 2023-02-20T20:35:57.397
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.397
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.invokeListenersForSkippedTestResult(TestInvoker.java:447)
+
+# Created at 2023-02-20T20:35:57.397
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.398
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:545)
+
+# Created at 2023-02-20T20:35:57.398
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.398
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+
+# Created at 2023-02-20T20:35:57.398
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.399
+Unexpected IOException with stream: 	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+
+# Created at 2023-02-20T20:35:57.399
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.399
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+
+# Created at 2023-02-20T20:35:57.399
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.400
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+
+# Created at 2023-02-20T20:35:57.400
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.400
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+
+# Created at 2023-02-20T20:35:57.400
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.401
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+
+# Created at 2023-02-20T20:35:57.401
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.402
+Unexpected IOException with stream: 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+# Created at 2023-02-20T20:35:57.403
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.404
+Unexpected IOException with stream: 	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+
+# Created at 2023-02-20T20:35:57.404
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.405
+Unexpected IOException with stream: 	at org.testng.TestRunner.run(TestRunner.java:596)
+
+# Created at 2023-02-20T20:35:57.405
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.406
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+
+# Created at 2023-02-20T20:35:57.406
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.406
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+
+# Created at 2023-02-20T20:35:57.407
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.407
+Unexpected IOException with stream: 	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+
+# Created at 2023-02-20T20:35:57.407
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.408
+Unexpected IOException with stream: 	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+
+# Created at 2023-02-20T20:35:57.408
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.408
+Unexpected IOException with stream: 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+
+# Created at 2023-02-20T20:35:57.408
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.408
+Unexpected IOException with stream: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+
+# Created at 2023-02-20T20:35:57.409
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.409
+Unexpected IOException with stream: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+
+# Created at 2023-02-20T20:35:57.409
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.409
+Unexpected IOException with stream: 	at java.base/java.lang.Thread.run(Thread.java:833)
+
+# Created at 2023-02-20T20:35:57.410
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.410
+Unexpected IOException: 9,1,tests.SmokeTests,verifyLogoTest(tests.SmokeTests),null,Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.\000ABuild info: version: '4.1.4'\002C revision: '535d840ee2'\000ASystem info: host: 'LAPTOP-NA2LMEKS'\002C ip: '172.18.16.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '17.0.1'\000ADriver info: org.openqa.selenium.remote.RemoteWebDriver\000ACommand: [null\002C newSession {capabilities=[Capabilities {browserName: Chrome\002C browserVersion: 103.0\002C bstack:options: {accessKey: To328gPDnEhpECcnw5JM\002C browser: Chrome\002C browserName: Chrome\002C browserVersion: 103.0\002C browserstackSDK: testng-javaagent/1.2.0\002C buildIdentifier: #7\002C buildName: browserstack build\002C consoleLogs: errors\002C debug: false\002C hostName: LAPTOP-NA2LMEKS\002C local: true\002C localIdentifier: 20_Feb_2035_LAPTOP_NA2LMEKS...\002C networkLogs: false\002C os: Windows\002C osVersion: 11\002C projectName: BrowserStack Samples\002C source: testng:archetype-setup:v1.5\002C userName: ryan_WNOhwP}}]\002C desiredCapabilities=Capabilities {browserName: Chrome\002C browserVersion: 103.0\002C bstack:options: {accessKey: To328gPDnEhpECcnw5JM\002C browser: Chrome\002C browserName: Chrome\002C browserVersion: 103.0\002C browserstackSDK: testng-javaagent/1.2.0\002C buildIdentifier: #7\002C buildName: browserstack build\002C consoleLogs: errors\002C debug: false\002C hostName: LAPTOP-NA2LMEKS\002C local: true\002C localIdentifier: 20_Feb_2035_LAPTOP_NA2LMEKS...\002C networkLogs: false\002C os: Windows\002C osVersion: 11\002C projectName: BrowserStack Samples\002C source: testng:archetype-setup:v1.5\002C userName: ryan_WNOhwP}}}]\000ACapabilities {},null
+
+
+# Created at 2023-02-20T20:35:57.411
+Unexpected IOException with stream: class name: SmokeTests with instance id :null
+
+# Created at 2023-02-20T20:35:57.411
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.412
+Unexpected IOException: 5,1,tests.SmokeTests,verifyProductsTest(tests.SmokeTests),tests.SmokeTests,null,null
+
+
+# Created at 2023-02-20T20:35:57.412
+Unexpected IOException with stream: D:\Projects\EcomAutomation\Extent Reports\Skip Screenshots\
+
+# Created at 2023-02-20T20:35:57.412
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.413
+Unexpected IOException with stream: verifyProductsTest
+
+# Created at 2023-02-20T20:35:57.413
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.413
+Unexpected IOException with stream: null
+
+# Created at 2023-02-20T20:35:57.413
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.414
+Unexpected IOException with stream: java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "d" is null
+
+# Created at 2023-02-20T20:35:57.414
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.415
+Unexpected IOException with stream: 	at listner.ReportListener.takeScreenShot(ReportListener.java:199)
+
+# Created at 2023-02-20T20:35:57.415
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.415
+Unexpected IOException with stream: 	at listner.ReportListener.onTestSkipped(ReportListener.java:139)
+
+# Created at 2023-02-20T20:35:57.415
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.416
+Unexpected IOException with stream: 	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:87)
+
+# Created at 2023-02-20T20:35:57.416
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.416
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:219)
+
+# Created at 2023-02-20T20:35:57.416
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.417
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.invokeListenersForSkippedTestResult(TestInvoker.java:447)
+
+# Created at 2023-02-20T20:35:57.417
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.417
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:545)
+
+# Created at 2023-02-20T20:35:57.417
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.418
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+
+# Created at 2023-02-20T20:35:57.419
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.420
+Unexpected IOException with stream: 	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+
+# Created at 2023-02-20T20:35:57.421
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.421
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+
+# Created at 2023-02-20T20:35:57.421
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.421
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+
+# Created at 2023-02-20T20:35:57.422
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.422
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+
+# Created at 2023-02-20T20:35:57.422
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.423
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+
+# Created at 2023-02-20T20:35:57.423
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.423
+Unexpected IOException with stream: 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+# Created at 2023-02-20T20:35:57.423
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.424
+Unexpected IOException with stream: 	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+
+# Created at 2023-02-20T20:35:57.424
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.424
+Unexpected IOException with stream: 	at org.testng.TestRunner.run(TestRunner.java:596)
+
+# Created at 2023-02-20T20:35:57.424
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.424
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+
+# Created at 2023-02-20T20:35:57.425
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.425
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+
+# Created at 2023-02-20T20:35:57.425
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.425
+Unexpected IOException with stream: 	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+
+# Created at 2023-02-20T20:35:57.425
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.426
+Unexpected IOException with stream: 	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+
+# Created at 2023-02-20T20:35:57.426
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.426
+Unexpected IOException with stream: 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+
+# Created at 2023-02-20T20:35:57.426
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.427
+Unexpected IOException with stream: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+
+# Created at 2023-02-20T20:35:57.427
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.427
+Unexpected IOException with stream: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+
+# Created at 2023-02-20T20:35:57.427
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.427
+Unexpected IOException with stream: 	at java.base/java.lang.Thread.run(Thread.java:833)
+
+# Created at 2023-02-20T20:35:57.428
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.429
+Unexpected IOException: 9,1,tests.SmokeTests,verifyProductsTest(tests.SmokeTests),null,Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.\000ABuild info: version: '4.1.4'\002C revision: '535d840ee2'\000ASystem info: host: 'LAPTOP-NA2LMEKS'\002C ip: '172.18.16.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '17.0.1'\000ADriver info: org.openqa.selenium.remote.RemoteWebDriver\000ACommand: [null\002C newSession {capabilities=[Capabilities {browserName: Chrome\002C browserVersion: 103.0\002C bstack:options: {accessKey: To328gPDnEhpECcnw5JM\002C browser: Chrome\002C browserName: Chrome\002C browserVersion: 103.0\002C browserstackSDK: testng-javaagent/1.2.0\002C buildIdentifier: #7\002C buildName: browserstack build\002C consoleLogs: errors\002C debug: false\002C hostName: LAPTOP-NA2LMEKS\002C local: true\002C localIdentifier: 20_Feb_2035_LAPTOP_NA2LMEKS...\002C networkLogs: false\002C os: Windows\002C osVersion: 11\002C projectName: BrowserStack Samples\002C source: testng:archetype-setup:v1.5\002C userName: ryan_WNOhwP}}]\002C desiredCapabilities=Capabilities {browserName: Chrome\002C browserVersion: 103.0\002C bstack:options: {accessKey: To328gPDnEhpECcnw5JM\002C browser: Chrome\002C browserName: Chrome\002C browserVersion: 103.0\002C browserstackSDK: testng-javaagent/1.2.0\002C buildIdentifier: #7\002C buildName: browserstack build\002C consoleLogs: errors\002C debug: false\002C hostName: LAPTOP-NA2LMEKS\002C local: true\002C localIdentifier: 20_Feb_2035_LAPTOP_NA2LMEKS...\002C networkLogs: false\002C os: Windows\002C osVersion: 11\002C projectName: BrowserStack Samples\002C source: testng:archetype-setup:v1.5\002C userName: ryan_WNOhwP}}}]\000ACapabilities {},null
+
+
+# Created at 2023-02-20T20:35:57.429
+Unexpected IOException with stream: class name: SmokeTests with instance id :null
+
+# Created at 2023-02-20T20:35:57.429
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.430
+Unexpected IOException: 5,1,tests.SmokeTests,verifySaleTest(tests.SmokeTests),tests.SmokeTests,null,null
+
+
+# Created at 2023-02-20T20:35:57.430
+Unexpected IOException with stream: D:\Projects\EcomAutomation\Extent Reports\Skip Screenshots\
+
+# Created at 2023-02-20T20:35:57.430
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.431
+Unexpected IOException with stream: verifySaleTest
+
+# Created at 2023-02-20T20:35:57.431
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.431
+Unexpected IOException with stream: null
+
+# Created at 2023-02-20T20:35:57.431
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.432
+Unexpected IOException with stream: java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "d" is null
+
+# Created at 2023-02-20T20:35:57.432
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.432
+Unexpected IOException with stream: 	at listner.ReportListener.takeScreenShot(ReportListener.java:199)
+
+# Created at 2023-02-20T20:35:57.432
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.433
+Unexpected IOException with stream: 	at listner.ReportListener.onTestSkipped(ReportListener.java:139)
+
+# Created at 2023-02-20T20:35:57.433
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.433
+Unexpected IOException with stream: 	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:87)
+
+# Created at 2023-02-20T20:35:57.433
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.433
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:219)
+
+# Created at 2023-02-20T20:35:57.433
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.434
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.invokeListenersForSkippedTestResult(TestInvoker.java:447)
+
+# Created at 2023-02-20T20:35:57.434
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.434
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:545)
+
+# Created at 2023-02-20T20:35:57.434
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.435
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+
+# Created at 2023-02-20T20:35:57.436
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.437
+Unexpected IOException with stream: 	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+
+# Created at 2023-02-20T20:35:57.437
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.437
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+
+# Created at 2023-02-20T20:35:57.437
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.438
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+
+# Created at 2023-02-20T20:35:57.438
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.438
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+
+# Created at 2023-02-20T20:35:57.438
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.439
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+
+# Created at 2023-02-20T20:35:57.439
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.439
+Unexpected IOException with stream: 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+# Created at 2023-02-20T20:35:57.439
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.439
+Unexpected IOException with stream: 	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+
+# Created at 2023-02-20T20:35:57.440
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.440
+Unexpected IOException with stream: 	at org.testng.TestRunner.run(TestRunner.java:596)
+
+# Created at 2023-02-20T20:35:57.440
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.440
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+
+# Created at 2023-02-20T20:35:57.440
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.441
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+
+# Created at 2023-02-20T20:35:57.441
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.441
+Unexpected IOException with stream: 	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+
+# Created at 2023-02-20T20:35:57.441
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.441
+Unexpected IOException with stream: 	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+
+# Created at 2023-02-20T20:35:57.442
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.442
+Unexpected IOException with stream: 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+
+# Created at 2023-02-20T20:35:57.442
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.442
+Unexpected IOException with stream: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+
+# Created at 2023-02-20T20:35:57.442
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.443
+Unexpected IOException with stream: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+
+# Created at 2023-02-20T20:35:57.443
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.443
+Unexpected IOException with stream: 	at java.base/java.lang.Thread.run(Thread.java:833)
+
+# Created at 2023-02-20T20:35:57.443
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.444
+Unexpected IOException: 9,1,tests.SmokeTests,verifySaleTest(tests.SmokeTests),null,Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.\000ABuild info: version: '4.1.4'\002C revision: '535d840ee2'\000ASystem info: host: 'LAPTOP-NA2LMEKS'\002C ip: '172.18.16.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '17.0.1'\000ADriver info: org.openqa.selenium.remote.RemoteWebDriver\000ACommand: [null\002C newSession {capabilities=[Capabilities {browserName: Chrome\002C browserVersion: 103.0\002C bstack:options: {accessKey: To328gPDnEhpECcnw5JM\002C browser: Chrome\002C browserName: Chrome\002C browserVersion: 103.0\002C browserstackSDK: testng-javaagent/1.2.0\002C buildIdentifier: #7\002C buildName: browserstack build\002C consoleLogs: errors\002C debug: false\002C hostName: LAPTOP-NA2LMEKS\002C local: true\002C localIdentifier: 20_Feb_2035_LAPTOP_NA2LMEKS...\002C networkLogs: false\002C os: Windows\002C osVersion: 11\002C projectName: BrowserStack Samples\002C source: testng:archetype-setup:v1.5\002C userName: ryan_WNOhwP}}]\002C desiredCapabilities=Capabilities {browserName: Chrome\002C browserVersion: 103.0\002C bstack:options: {accessKey: To328gPDnEhpECcnw5JM\002C browser: Chrome\002C browserName: Chrome\002C browserVersion: 103.0\002C browserstackSDK: testng-javaagent/1.2.0\002C buildIdentifier: #7\002C buildName: browserstack build\002C consoleLogs: errors\002C debug: false\002C hostName: LAPTOP-NA2LMEKS\002C local: true\002C localIdentifier: 20_Feb_2035_LAPTOP_NA2LMEKS...\002C networkLogs: false\002C os: Windows\002C osVersion: 11\002C projectName: BrowserStack Samples\002C source: testng:archetype-setup:v1.5\002C userName: ryan_WNOhwP}}}]\000ACapabilities {},null
+
+
+# Created at 2023-02-20T20:35:57.445
+Unexpected IOException with stream: class name: SmokeTests with instance id :null
+
+# Created at 2023-02-20T20:35:57.445
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.446
+Unexpected IOException: 5,1,tests.SmokeTests,verifyShopTest(tests.SmokeTests),tests.SmokeTests,null,null
+
+
+# Created at 2023-02-20T20:35:57.446
+Unexpected IOException with stream: D:\Projects\EcomAutomation\Extent Reports\Skip Screenshots\
+
+# Created at 2023-02-20T20:35:57.446
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.447
+Unexpected IOException with stream: verifyShopTest
+
+# Created at 2023-02-20T20:35:57.447
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.447
+Unexpected IOException with stream: null
+
+# Created at 2023-02-20T20:35:57.448
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.448
+Unexpected IOException with stream: java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "d" is null
+
+# Created at 2023-02-20T20:35:57.448
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.449
+Unexpected IOException with stream: 	at listner.ReportListener.takeScreenShot(ReportListener.java:199)
+
+# Created at 2023-02-20T20:35:57.449
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.449
+Unexpected IOException with stream: 	at listner.ReportListener.onTestSkipped(ReportListener.java:139)
+
+# Created at 2023-02-20T20:35:57.450
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.450
+Unexpected IOException with stream: 	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:87)
+
+# Created at 2023-02-20T20:35:57.450
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.450
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:219)
+
+# Created at 2023-02-20T20:35:57.451
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.451
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.invokeListenersForSkippedTestResult(TestInvoker.java:447)
+
+# Created at 2023-02-20T20:35:57.452
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.453
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:545)
+
+# Created at 2023-02-20T20:35:57.454
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.454
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+
+# Created at 2023-02-20T20:35:57.455
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.455
+Unexpected IOException with stream: 	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+
+# Created at 2023-02-20T20:35:57.455
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.455
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+
+# Created at 2023-02-20T20:35:57.456
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.456
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+
+# Created at 2023-02-20T20:35:57.456
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.456
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+
+# Created at 2023-02-20T20:35:57.457
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.457
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+
+# Created at 2023-02-20T20:35:57.457
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.458
+Unexpected IOException with stream: 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+# Created at 2023-02-20T20:35:57.458
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.458
+Unexpected IOException with stream: 	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+
+# Created at 2023-02-20T20:35:57.458
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.459
+Unexpected IOException with stream: 	at org.testng.TestRunner.run(TestRunner.java:596)
+
+# Created at 2023-02-20T20:35:57.459
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.459
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+
+# Created at 2023-02-20T20:35:57.459
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.460
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+
+# Created at 2023-02-20T20:35:57.460
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.460
+Unexpected IOException with stream: 	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+
+# Created at 2023-02-20T20:35:57.460
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.461
+Unexpected IOException with stream: 	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+
+# Created at 2023-02-20T20:35:57.461
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.461
+Unexpected IOException with stream: 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+
+# Created at 2023-02-20T20:35:57.461
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.462
+Unexpected IOException with stream: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+
+# Created at 2023-02-20T20:35:57.462
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.462
+Unexpected IOException with stream: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+
+# Created at 2023-02-20T20:35:57.462
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.462
+Unexpected IOException with stream: 	at java.base/java.lang.Thread.run(Thread.java:833)
+
+# Created at 2023-02-20T20:35:57.463
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.463
+Unexpected IOException: 9,1,tests.SmokeTests,verifyShopTest(tests.SmokeTests),null,Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.\000ABuild info: version: '4.1.4'\002C revision: '535d840ee2'\000ASystem info: host: 'LAPTOP-NA2LMEKS'\002C ip: '172.18.16.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '17.0.1'\000ADriver info: org.openqa.selenium.remote.RemoteWebDriver\000ACommand: [null\002C newSession {capabilities=[Capabilities {browserName: Chrome\002C browserVersion: 103.0\002C bstack:options: {accessKey: To328gPDnEhpECcnw5JM\002C browser: Chrome\002C browserName: Chrome\002C browserVersion: 103.0\002C browserstackSDK: testng-javaagent/1.2.0\002C buildIdentifier: #7\002C buildName: browserstack build\002C consoleLogs: errors\002C debug: false\002C hostName: LAPTOP-NA2LMEKS\002C local: true\002C localIdentifier: 20_Feb_2035_LAPTOP_NA2LMEKS...\002C networkLogs: false\002C os: Windows\002C osVersion: 11\002C projectName: BrowserStack Samples\002C source: testng:archetype-setup:v1.5\002C userName: ryan_WNOhwP}}]\002C desiredCapabilities=Capabilities {browserName: Chrome\002C browserVersion: 103.0\002C bstack:options: {accessKey: To328gPDnEhpECcnw5JM\002C browser: Chrome\002C browserName: Chrome\002C browserVersion: 103.0\002C browserstackSDK: testng-javaagent/1.2.0\002C buildIdentifier: #7\002C buildName: browserstack build\002C consoleLogs: errors\002C debug: false\002C hostName: LAPTOP-NA2LMEKS\002C local: true\002C localIdentifier: 20_Feb_2035_LAPTOP_NA2LMEKS...\002C networkLogs: false\002C os: Windows\002C osVersion: 11\002C projectName: BrowserStack Samples\002C source: testng:archetype-setup:v1.5\002C userName: ryan_WNOhwP}}}]\000ACapabilities {},null
+
+
+# Created at 2023-02-20T20:35:57.464
+Unexpected IOException with stream: class name: SmokeTests with instance id :null
+
+# Created at 2023-02-20T20:35:57.464
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.465
+Unexpected IOException: 5,1,tests.SmokeTests,verifyWatchesTest(tests.SmokeTests),tests.SmokeTests,null,null
+
+
+# Created at 2023-02-20T20:35:57.465
+Unexpected IOException with stream: D:\Projects\EcomAutomation\Extent Reports\Skip Screenshots\
+
+# Created at 2023-02-20T20:35:57.465
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.465
+Unexpected IOException with stream: verifyWatchesTest
+
+# Created at 2023-02-20T20:35:57.466
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.466
+Unexpected IOException with stream: null
+
+# Created at 2023-02-20T20:35:57.466
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.466
+Unexpected IOException with stream: java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "d" is null
+
+# Created at 2023-02-20T20:35:57.466
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.467
+Unexpected IOException with stream: 	at listner.ReportListener.takeScreenShot(ReportListener.java:199)
+
+# Created at 2023-02-20T20:35:57.467
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.467
+Unexpected IOException with stream: 	at listner.ReportListener.onTestSkipped(ReportListener.java:139)
+
+# Created at 2023-02-20T20:35:57.467
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.468
+Unexpected IOException with stream: 	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:87)
+
+# Created at 2023-02-20T20:35:57.469
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.470
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:219)
+
+# Created at 2023-02-20T20:35:57.470
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.471
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.invokeListenersForSkippedTestResult(TestInvoker.java:447)
+
+# Created at 2023-02-20T20:35:57.471
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.472
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:545)
+
+# Created at 2023-02-20T20:35:57.472
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.473
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+
+# Created at 2023-02-20T20:35:57.473
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.473
+Unexpected IOException with stream: 	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+
+# Created at 2023-02-20T20:35:57.473
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.474
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+
+# Created at 2023-02-20T20:35:57.474
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.474
+Unexpected IOException with stream: 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+
+# Created at 2023-02-20T20:35:57.475
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.475
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+
+# Created at 2023-02-20T20:35:57.475
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.476
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+
+# Created at 2023-02-20T20:35:57.476
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.476
+Unexpected IOException with stream: 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+# Created at 2023-02-20T20:35:57.477
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.477
+Unexpected IOException with stream: 	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+
+# Created at 2023-02-20T20:35:57.477
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.478
+Unexpected IOException with stream: 	at org.testng.TestRunner.run(TestRunner.java:596)
+
+# Created at 2023-02-20T20:35:57.478
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.478
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+
+# Created at 2023-02-20T20:35:57.478
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.479
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+
+# Created at 2023-02-20T20:35:57.479
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.479
+Unexpected IOException with stream: 	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+
+# Created at 2023-02-20T20:35:57.480
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.480
+Unexpected IOException with stream: 	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+
+# Created at 2023-02-20T20:35:57.480
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.480
+Unexpected IOException with stream: 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+
+# Created at 2023-02-20T20:35:57.481
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.481
+Unexpected IOException with stream: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+
+# Created at 2023-02-20T20:35:57.481
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.482
+Unexpected IOException with stream: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+
+# Created at 2023-02-20T20:35:57.482
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.482
+Unexpected IOException with stream: 	at java.base/java.lang.Thread.run(Thread.java:833)
+
+# Created at 2023-02-20T20:35:57.483
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-20T20:35:57.484
+Unexpected IOException: 9,1,tests.SmokeTests,verifyWatchesTest(tests.SmokeTests),null,Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.\000ABuild info: version: '4.1.4'\002C revision: '535d840ee2'\000ASystem info: host: 'LAPTOP-NA2LMEKS'\002C ip: '172.18.16.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '17.0.1'\000ADriver info: org.openqa.selenium.remote.RemoteWebDriver\000ACommand: [null\002C newSession {capabilities=[Capabilities {browserName: Chrome\002C browserVersion: 103.0\002C bstack:options: {accessKey: To328gPDnEhpECcnw5JM\002C browser: Chrome\002C browserName: Chrome\002C browserVersion: 103.0\002C browserstackSDK: testng-javaagent/1.2.0\002C buildIdentifier: #7\002C buildName: browserstack build\002C consoleLogs: errors\002C debug: false\002C hostName: LAPTOP-NA2LMEKS\002C local: true\002C localIdentifier: 20_Feb_2035_LAPTOP_NA2LMEKS...\002C networkLogs: false\002C os: Windows\002C osVersion: 11\002C projectName: BrowserStack Samples\002C source: testng:archetype-setup:v1.5\002C userName: ryan_WNOhwP}}]\002C desiredCapabilities=Capabilities {browserName: Chrome\002C browserVersion: 103.0\002C bstack:options: {accessKey: To328gPDnEhpECcnw5JM\002C browser: Chrome\002C browserName: Chrome\002C browserVersion: 103.0\002C browserstackSDK: testng-javaagent/1.2.0\002C buildIdentifier: #7\002C buildName: browserstack build\002C consoleLogs: errors\002C debug: false\002C hostName: LAPTOP-NA2LMEKS\002C local: true\002C localIdentifier: 20_Feb_2035_LAPTOP_NA2LMEKS...\002C networkLogs: false\002C os: Windows\002C osVersion: 11\002C projectName: BrowserStack Samples\002C source: testng:archetype-setup:v1.5\002C userName: ryan_WNOhwP}}}]\000ACapabilities {},null
+
+
+# Created at 2023-02-20T20:35:57.487
+Unexpected IOException: 8,1,tests.SmokeTests,tearDown(tests.SmokeTests),null,Cannot invoke "org.openqa.selenium.remote.RemoteWebDriver.quit()" because "this.driver" is null,null,Cannot invoke "org.openqa.selenium.remote.RemoteWebDriver.quit()" because "this.driver" is null,SmokeTests.tearDown:126 NullPointer Cannot invoke "org.openqa.selenium.remote....,java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.remote.RemoteWebDriver.quit()" because "this.driver" is null\000A\0009at tests.SmokeTests.tearDown(SmokeTests.java:126)\000A
+
+
+# Created at 2023-02-20T20:35:57.882
+Unexpected IOException: 2,1,org.apache.maven.surefire.testng.TestNGXmlTestSuite,TestSuite,null,null,null
+
+

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cart-0"
+           tests="6"
+           failures="2"
+           errors="0"
+           skipped="4"
+           time="0.022">
+  <properties />
+            <testcase name="startUp" time="0.021" classname="tests.CartTests">
+                <failure type="org.openqa.selenium.remote.UnreachableBrowserException"
+                  message="Error communicating with the remote browser. It may have died.
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
+System info: host: &apos;LAPTOP-72RPSL3M&apos;, ip: &apos;192.168.1.10&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;
+Driver info: driver.version: RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.24 (e47b049c438c..., userDataDir: C:\Windows\proxy\scoped_dir...}, goog:chromeOptions: {debuggerAddress: localhost:7063}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 5d3c92bd5749da9e7f6277307d2...}
+Session ID: 5d3c92bd5749da9e7f6277307d2e4ed672738f1b"
+              >
+<![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'LAPTOP-72RPSL3M', ip: '192.168.1.10', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: driver.version: RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.24 (e47b049c438c..., userDataDir: C:\Windows\proxy\scoped_dir...}, goog:chromeOptions: {debuggerAddress: localhost:7063}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 5d3c92bd5749da9e7f6277307d2...}
+Session ID: 5d3c92bd5749da9e7f6277307d2e4ed672738f1b
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+  org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+  tests.CartTests.startUp(CartTests.java:36)
+  java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.base/java.lang.reflect.Method.invoke(Method.java:566)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+  org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+  org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+  org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+  org.testng.TestRunner.privateRun(TestRunner.java:648)
+  org.testng.TestRunner.run(TestRunner.java:505)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+  org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+  org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+  java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+  java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+  java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+  java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.UnknownHostException: hub.browserstack.com
+  java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+  java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1515)
+  java.base/java.net.InetAddress.getAllByName(InetAddress.java:1374)
+  java.base/java.net.InetAddress.getAllByName(InetAddress.java:1302)
+  okhttp3.Dns$1.lookup(Dns.java:40)
+  okhttp3.internal.connection.RouteSelector.resetNextInetSocketAddress(RouteSelector.java:185)
+  okhttp3.internal.connection.RouteSelector.nextProxy(RouteSelector.java:149)
+  okhttp3.internal.connection.RouteSelector.next(RouteSelector.java:84)
+  okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:214)
+  okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+  okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+  okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+  okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+  okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+  okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+  okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+  okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+  okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+  okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+  okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+  okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+  okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+  okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+  okhttp3.RealCall.execute(RealCall.java:77)
+  org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:105)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+  org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+  tests.CartTests.startUp(CartTests.java:36)
+  java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.base/java.lang.reflect.Method.invoke(Method.java:566)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+  org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+  org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+  org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+  org.testng.TestRunner.privateRun(TestRunner.java:648)
+  org.testng.TestRunner.run(TestRunner.java:505)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+  org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+  org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+  java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+  java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+  java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+  java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="tearDown" time="0.001" classname="tests.CartTests">
+                <failure type="org.openqa.selenium.remote.UnreachableBrowserException"
+                  message="Error communicating with the remote browser. It may have died.
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
+System info: host: &apos;LAPTOP-72RPSL3M&apos;, ip: &apos;192.168.1.10&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;
+Driver info: driver.version: RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.24 (e47b049c438c..., userDataDir: C:\Windows\proxy\scoped_dir...}, goog:chromeOptions: {debuggerAddress: localhost:7063}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 5d3c92bd5749da9e7f6277307d2...}
+Session ID: 5d3c92bd5749da9e7f6277307d2e4ed672738f1b"
+              >
+<![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'LAPTOP-72RPSL3M', ip: '192.168.1.10', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: driver.version: RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.24 (e47b049c438c..., userDataDir: C:\Windows\proxy\scoped_dir...}, goog:chromeOptions: {debuggerAddress: localhost:7063}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 5d3c92bd5749da9e7f6277307d2...}
+Session ID: 5d3c92bd5749da9e7f6277307d2e4ed672738f1b
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+  org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:438)
+  tests.CartTests.tearDown(CartTests.java:90)
+  java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.base/java.lang.reflect.Method.invoke(Method.java:566)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+  org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+  org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+  org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:214)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+  org.testng.TestRunner.privateRun(TestRunner.java:648)
+  org.testng.TestRunner.run(TestRunner.java:505)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+  org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+  org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+  java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+  java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+  java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+  java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.UnknownHostException: hub.browserstack.com
+  java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+  java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1515)
+  java.base/java.net.InetAddress.getAllByName(InetAddress.java:1374)
+  java.base/java.net.InetAddress.getAllByName(InetAddress.java:1302)
+  okhttp3.Dns$1.lookup(Dns.java:40)
+  okhttp3.internal.connection.RouteSelector.resetNextInetSocketAddress(RouteSelector.java:185)
+  okhttp3.internal.connection.RouteSelector.nextProxy(RouteSelector.java:149)
+  okhttp3.internal.connection.RouteSelector.next(RouteSelector.java:84)
+  okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:214)
+  okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+  okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+  okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+  okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+  okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+  okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+  okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+  okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+  okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+  okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+  okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+  okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+  okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+  okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+  okhttp3.RealCall.execute(RealCall.java:77)
+  org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:105)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+  org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:438)
+  tests.CartTests.tearDown(CartTests.java:90)
+  java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.base/java.lang.reflect.Method.invoke(Method.java:566)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+  org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+  org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+  org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:214)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+  org.testng.TestRunner.privateRun(TestRunner.java:648)
+  org.testng.TestRunner.run(TestRunner.java:505)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+  org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+  org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+  java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+  java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+  java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+  java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+      </failure>
+
+          </testcase>
+  
+            <testcase name="verifyPaymentTest" time="0.0" classname="tests.CartTests">
+          <skipped />
+    </testcase>
+            <testcase name="verifyCheckoutTest" time="0.0" classname="tests.CartTests">
+          <skipped />
+    </testcase>
+            <testcase name="verifyEmptyCartTest" time="0.0" classname="tests.CartTests">
+          <skipped />
+    </testcase>
+            <testcase name="verifyCartTest" time="0.0" classname="tests.CartTests">
+          <skipped />
+    </testcase>
+  
+  
+</testsuite>

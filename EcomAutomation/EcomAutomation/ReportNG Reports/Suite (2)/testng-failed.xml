@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Failed suite [Suite (2)]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="1" parallel="tests" name="Smoke-0(failed)" verbose="0">
+    <parameter name="platform" value="0"/>
+    <classes>
+      <class name="tests.SmokeTests">
+        <methods>
+          <include name="verifyWatchesTest"/>
+          <include name="startUp"/>
+          <include name="verifyShopTest"/>
+          <include name="verifyContactTest"/>
+          <include name="verifyAboutUsTest"/>
+          <include name="verifyBlogTest"/>
+          <include name="verifyLogoTest"/>
+          <include name="verifySaleTest"/>
+          <include name="verifyProductsTest"/>
+          <include name="verifyHomeTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- tests.SmokeTests -->
+    </classes>
+  </test> <!-- Smoke-0(failed) -->
+</suite> <!-- Failed suite [Suite (2)] -->

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Failed suite [Suite (1)]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="1" parallel="tests" name="Cart-0(failed)" verbose="0">
+    <parameter name="platform" value="0"/>
+    <classes>
+      <class name="tests.CartTests">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyCheckoutTest"/>
+          <include name="verifyCartTest"/>
+          <include name="startUp"/>
+          <include name="verifyEmptyCartTest"/>
+          <include name="verifyPaymentTest"/>
+        </methods>
+      </class> <!-- tests.CartTests -->
+    </classes>
+  </test> <!-- Cart-0(failed) -->
+</suite> <!-- Failed suite [Suite (1)] -->

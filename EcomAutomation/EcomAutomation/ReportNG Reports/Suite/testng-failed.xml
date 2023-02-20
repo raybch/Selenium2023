@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="listner.ReportListener"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test thread-count="1" parallel="tests" name="User-0(failed)" verbose="0">
+    <parameter name="platform" value="0"/>
+    <classes>
+      <class name="tests.UserTests">
+        <methods>
+          <include name="verifyAccountDetailsTest"/>
+          <include name="verifyDashboardTest"/>
+          <include name="tearDown"/>
+          <include name="verifyLoginTest"/>
+          <include name="verifySignOutTest"/>
+          <include name="verifyOrdersTest"/>
+          <include name="verifyAddressesTest"/>
+          <include name="startUp"/>
+        </methods>
+      </class> <!-- tests.UserTests -->
+    </classes>
+  </test> <!-- User-0(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - User-0</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>User-0</h1>
+<p>
+  Test duration: 334.785s
+</p>
+
+  <table class="resultsTable configTable">
+    <tr><th colspan="3" class="header failedConfig">Failed Configuration</th></tr>
+              <tr class="group">
+        <td colspan="3">tests.UserTests</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  tearDown
+      </td>
+  <td class="duration">
+    0.001s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.<br/>
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;<br/>
+System info: host: &apos;LAPTOP-72RPSL3M&apos;, ip: &apos;192.168.1.10&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;<br/>
+Driver info: driver.version: RemoteWebDriver<br/>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.24 (e47b049c438c..., userDataDir: C:\Windows\proxy\scoped_dir...}, goog:chromeOptions: {debuggerAddress: localhost:7063}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 5d3c92bd5749da9e7f6277307d2...}<br/>
+Session ID: 5d3c92bd5749da9e7f6277307d2e4ed672738f1b</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:438)<br />
+              tests.UserTests.tearDown(UserTests.java:102)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:566)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)<br />
+              org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)<br />
+              org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)<br />
+              org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)<br />
+              org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:214)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
+              org.testng.TestRunner.run(TestRunner.java:505)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
+              org.testng.SuiteRunner.access$000(SuiteRunner.java:40)<br />
+              org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)<br />
+              org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)<br />
+              java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)<br />
+              java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)<br />
+              java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)<br />
+              java.base/java.lang.Thread.run(Thread.java:834)<br />
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse">java.net.UnknownHostException: hub.browserstack.com</a><br />
+        <div class="stackTrace" id="exception-1">
+                      java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)<br />
+                      java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1515)<br />
+                      java.base/java.net.InetAddress.getAllByName(InetAddress.java:1374)<br />
+                      java.base/java.net.InetAddress.getAllByName(InetAddress.java:1302)<br />
+                      okhttp3.Dns$1.lookup(Dns.java:40)<br />
+                      okhttp3.internal.connection.RouteSelector.resetNextInetSocketAddress(RouteSelector.java:185)<br />
+                      okhttp3.internal.connection.RouteSelector.nextProxy(RouteSelector.java:149)<br />
+                      okhttp3.internal.connection.RouteSelector.next(RouteSelector.java:84)<br />
+                      okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:214)<br />
+                      okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)<br />
+                      okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)<br />
+                      okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)<br />
+                      okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)<br />
+                      okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)<br />
+                      okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)<br />
+                      okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)<br />
+                      okhttp3.RealCall.execute(RealCall.java:77)<br />
+                      org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:105)<br />
+                      org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:438)<br />
+                      tests.UserTests.tearDown(UserTests.java:102)<br />
+                      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+                      java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.base/java.lang.reflect.Method.invoke(Method.java:566)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)<br />
+                      org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)<br />
+                      org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)<br />
+                      org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)<br />
+                      org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:214)<br />
+                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+                      org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
+                      org.testng.TestRunner.run(TestRunner.java:505)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
+                      org.testng.SuiteRunner.access$000(SuiteRunner.java:40)<br />
+                      org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)<br />
+                      org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)<br />
+                      java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)<br />
+                      java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)<br />
+                      java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)<br />
+                      java.base/java.lang.Thread.run(Thread.java:834)<br />
+                  </div>
+          </div>
+      </td>
+</tr>
+    
+      </table>
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">tests.UserTests</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  verifyAccountDetailsTest
+      </td>
+  <td class="duration">
+    60.921s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-2', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //a[text()=&apos;Account details&apos;] (tried for 60 second(s) with 500 milliseconds interval)</b></a><br />
+    <div class="stackTrace" id="exception-2">
+              org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)<br />
+              org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)<br />
+              pages.BasePage.waitForElementClickability(BasePage.java:18)<br />
+              pages.BasePage.click(BasePage.java:36)<br />
+              pages.AccountPage.clickOnAccountDetails(AccountPage.java:30)<br />
+              tests.UserTests.verifyAccountDetailsTest(UserTests.java:72)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:566)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:583)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
+              org.testng.TestRunner.run(TestRunner.java:505)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
+              org.testng.SuiteRunner.access$000(SuiteRunner.java:40)<br />
+              org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)<br />
+              org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)<br />
+              java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)<br />
+              java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)<br />
+              java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)<br />
+              java.base/java.lang.Thread.run(Thread.java:834)<br />
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-3', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //a[text()=&apos;Account details&apos;]<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;<br/>
+System info: host: &apos;LAPTOP-72RPSL3M&apos;, ip: &apos;192.168.1.10&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;<br/>
+Driver info: driver.version: unknown</a><br />
+        <div class="stackTrace" id="exception-3">
+                      org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)<br />
+                      java.base/java.util.Optional.orElseThrow(Optional.java:408)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:657)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:654)<br />
+                      org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)<br />
+                      pages.BasePage.waitForElementClickability(BasePage.java:18)<br />
+                      pages.BasePage.click(BasePage.java:36)<br />
+                      pages.AccountPage.clickOnAccountDetails(AccountPage.java:30)<br />
+                      tests.UserTests.verifyAccountDetailsTest(UserTests.java:72)<br />
+                      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+                      java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.base/java.lang.reflect.Method.invoke(Method.java:566)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
+                      org.testng.internal.Invoker.invokeMethod(Invoker.java:583)<br />
+                      org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br />
+                      org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)<br />
+                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
+                      org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
+                      org.testng.TestRunner.run(TestRunner.java:505)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
+                      org.testng.SuiteRunner.access$000(SuiteRunner.java:40)<br />
+                      org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)<br />
+                      org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)<br />
+                      java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)<br />
+                      java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)<br />
+                      java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)<br />
+                      java.base/java.lang.Thread.run(Thread.java:834)<br />
+                  </div>
+          </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyAddressesTest
+      </td>
+  <td class="duration">
+    60.891s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-4', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //a[text()=&apos;Addresses&apos;] (tried for 60 second(s) with 500 milliseconds interval)</b></a><br />
+    <div class="stackTrace" id="exception-4">
+              org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)<br />
+              org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)<br />
+              pages.BasePage.waitForElementClickability(BasePage.java:18)<br />
+              pages.BasePage.click(BasePage.java:36)<br />
+              pages.AccountPage.clickOnAddresses(AccountPage.java:22)<br />
+              tests.UserTests.verifyAddressesTest(UserTests.java:82)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:566)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:583)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
+              org.testng.TestRunner.run(TestRunner.java:505)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
+              org.testng.SuiteRunner.access$000(SuiteRunner.java:40)<br />
+              org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)<br />
+              org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)<br />
+              java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)<br />
+              java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)<br />
+              java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)<br />
+              java.base/java.lang.Thread.run(Thread.java:834)<br />
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-5', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //a[text()=&apos;Addresses&apos;]<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;<br/>
+System info: host: &apos;LAPTOP-72RPSL3M&apos;, ip: &apos;192.168.1.10&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;<br/>
+Driver info: driver.version: unknown</a><br />
+        <div class="stackTrace" id="exception-5">
+                      org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)<br />
+                      java.base/java.util.Optional.orElseThrow(Optional.java:408)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:657)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:654)<br />
+                      org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)<br />
+                      pages.BasePage.waitForElementClickability(BasePage.java:18)<br />
+                      pages.BasePage.click(BasePage.java:36)<br />
+                      pages.AccountPage.clickOnAddresses(AccountPage.java:22)<br />
+                      tests.UserTests.verifyAddressesTest(UserTests.java:82)<br />
+                      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+                      java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.base/java.lang.reflect.Method.invoke(Method.java:566)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
+                      org.testng.internal.Invoker.invokeMethod(Invoker.java:583)<br />
+                      org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br />
+                      org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)<br />
+                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
+                      org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
+                      org.testng.TestRunner.run(TestRunner.java:505)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
+                      org.testng.SuiteRunner.access$000(SuiteRunner.java:40)<br />
+                      org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)<br />
+                      org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)<br />
+                      java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)<br />
+                      java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)<br />
+                      java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)<br />
+                      java.base/java.lang.Thread.run(Thread.java:834)<br />
+                  </div>
+          </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyDashboardTest
+      </td>
+  <td class="duration">
+    0.924s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-6', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: The following asserts failed:<br/>
+	expected [true] but found [false]</b></a><br />
+    <div class="stackTrace" id="exception-6">
+              org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)<br />
+              tests.UserTests.verifyDashboardTest(UserTests.java:54)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:566)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:583)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
+              org.testng.TestRunner.run(TestRunner.java:505)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
+              org.testng.SuiteRunner.access$000(SuiteRunner.java:40)<br />
+              org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)<br />
+              org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)<br />
+              java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)<br />
+              java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)<br />
+              java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)<br />
+              java.base/java.lang.Thread.run(Thread.java:834)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyLoginTest
+      </td>
+  <td class="duration">
+    81.555s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-7', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.id: defaultlogin (tried for 60 second(s) with 500 milliseconds interval)</b></a><br />
+    <div class="stackTrace" id="exception-7">
+              org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)<br />
+              org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)<br />
+              pages.BasePage.waitForElementClickability(BasePage.java:18)<br />
+              pages.BasePage.click(BasePage.java:36)<br />
+              pages.HomePage.clickOnDefaultAccount(HomePage.java:27)<br />
+              tests.UserTests.verifyLoginTest(UserTests.java:43)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:566)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:583)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
+              org.testng.TestRunner.run(TestRunner.java:505)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
+              org.testng.SuiteRunner.access$000(SuiteRunner.java:40)<br />
+              org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)<br />
+              org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)<br />
+              java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)<br />
+              java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)<br />
+              java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)<br />
+              java.base/java.lang.Thread.run(Thread.java:834)<br />
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-8', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: defaultlogin<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;<br/>
+System info: host: &apos;LAPTOP-72RPSL3M&apos;, ip: &apos;192.168.1.10&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;<br/>
+Driver info: driver.version: unknown</a><br />
+        <div class="stackTrace" id="exception-8">
+                      org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)<br />
+                      java.base/java.util.Optional.orElseThrow(Optional.java:408)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:657)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:654)<br />
+                      org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)<br />
+                      pages.BasePage.waitForElementClickability(BasePage.java:18)<br />
+                      pages.BasePage.click(BasePage.java:36)<br />
+                      pages.HomePage.clickOnDefaultAccount(HomePage.java:27)<br />
+                      tests.UserTests.verifyLoginTest(UserTests.java:43)<br />
+                      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+                      java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.base/java.lang.reflect.Method.invoke(Method.java:566)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
+                      org.testng.internal.Invoker.invokeMethod(Invoker.java:583)<br />
+                      org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br />
+                      org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)<br />
+                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
+                      org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
+                      org.testng.TestRunner.run(TestRunner.java:505)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
+                      org.testng.SuiteRunner.access$000(SuiteRunner.java:40)<br />
+                      org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)<br />
+                      org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)<br />
+                      java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)<br />
+                      java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)<br />
+                      java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)<br />
+                      java.base/java.lang.Thread.run(Thread.java:834)<br />
+                  </div>
+          </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyOrdersTest
+      </td>
+  <td class="duration">
+    60.893s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-9', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //a[text()=&apos;Orders&apos;] (tried for 60 second(s) with 500 milliseconds interval)</b></a><br />
+    <div class="stackTrace" id="exception-9">
+              org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)<br />
+              org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)<br />
+              pages.BasePage.waitForElementClickability(BasePage.java:18)<br />
+              pages.BasePage.click(BasePage.java:36)<br />
+              pages.AccountPage.clickOnOrders(AccountPage.java:18)<br />
+              tests.UserTests.verifyOrdersTest(UserTests.java:62)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:566)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:583)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
+              org.testng.TestRunner.run(TestRunner.java:505)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
+              org.testng.SuiteRunner.access$000(SuiteRunner.java:40)<br />
+              org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)<br />
+              org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)<br />
+              java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)<br />
+              java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)<br />
+              java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)<br />
+              java.base/java.lang.Thread.run(Thread.java:834)<br />
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-10', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //a[text()=&apos;Orders&apos;]<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;<br/>
+System info: host: &apos;LAPTOP-72RPSL3M&apos;, ip: &apos;192.168.1.10&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;<br/>
+Driver info: driver.version: unknown</a><br />
+        <div class="stackTrace" id="exception-10">
+                      org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)<br />
+                      java.base/java.util.Optional.orElseThrow(Optional.java:408)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:657)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:654)<br />
+                      org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)<br />
+                      pages.BasePage.waitForElementClickability(BasePage.java:18)<br />
+                      pages.BasePage.click(BasePage.java:36)<br />
+                      pages.AccountPage.clickOnOrders(AccountPage.java:18)<br />
+                      tests.UserTests.verifyOrdersTest(UserTests.java:62)<br />
+                      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+                      java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.base/java.lang.reflect.Method.invoke(Method.java:566)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
+                      org.testng.internal.Invoker.invokeMethod(Invoker.java:583)<br />
+                      org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br />
+                      org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)<br />
+                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
+                      org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
+                      org.testng.TestRunner.run(TestRunner.java:505)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
+                      org.testng.SuiteRunner.access$000(SuiteRunner.java:40)<br />
+                      org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)<br />
+                      org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)<br />
+                      java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)<br />
+                      java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)<br />
+                      java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)<br />
+                      java.base/java.lang.Thread.run(Thread.java:834)<br />
+                  </div>
+          </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifySignOutTest
+      </td>
+  <td class="duration">
+    60.542s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-11', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.<br/>
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;<br/>
+System info: host: &apos;LAPTOP-72RPSL3M&apos;, ip: &apos;192.168.1.10&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;<br/>
+Driver info: driver.version: RemoteWebDriver<br/>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.24 (e47b049c438c..., userDataDir: C:\Windows\proxy\scoped_dir...}, goog:chromeOptions: {debuggerAddress: localhost:7063}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 5d3c92bd5749da9e7f6277307d2...}<br/>
+Session ID: 5d3c92bd5749da9e7f6277307d2e4ed672738f1b</b></a><br />
+    <div class="stackTrace" id="exception-11">
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:349)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:428)<br />
+              org.openqa.selenium.By$ByXPath.findElements(By.java:348)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:310)<br />
+              org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)<br />
+              org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)<br />
+              org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)<br />
+              org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)<br />
+              org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:657)<br />
+              org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:654)<br />
+              org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)<br />
+              pages.BasePage.waitForElementClickability(BasePage.java:18)<br />
+              pages.BasePage.click(BasePage.java:36)<br />
+              pages.AccountPage.clickOnLogout(AccountPage.java:26)<br />
+              tests.UserTests.verifySignOutTest(UserTests.java:93)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:566)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:583)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
+              org.testng.TestRunner.run(TestRunner.java:505)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
+              org.testng.SuiteRunner.access$000(SuiteRunner.java:40)<br />
+              org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)<br />
+              org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)<br />
+              java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)<br />
+              java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)<br />
+              java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)<br />
+              java.base/java.lang.Thread.run(Thread.java:834)<br />
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-12', 'block')" title="Click to expand/collapse">java.net.SocketException: Connection reset</a><br />
+        <div class="stackTrace" id="exception-12">
+                      java.base/java.net.SocketInputStream.read(SocketInputStream.java:186)<br />
+                      java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)<br />
+                      java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)<br />
+                      java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)<br />
+                      java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)<br />
+                      java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1333)<br />
+                      java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:976)<br />
+                      okio.Okio$2.read(Okio.java:140)<br />
+                      okio.AsyncTimeout$2.read(AsyncTimeout.java:237)<br />
+                      okio.RealBufferedSource.indexOf(RealBufferedSource.java:355)<br />
+                      okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.java:227)<br />
+                      okhttp3.internal.http1.Http1Codec.readHeaderLine(Http1Codec.java:215)<br />
+                      okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:189)<br />
+                      okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.java:88)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)<br />
+                      okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:45)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)<br />
+                      okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)<br />
+                      okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)<br />
+                      okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)<br />
+                      okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)<br />
+                      okhttp3.RealCall.execute(RealCall.java:77)<br />
+                      org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:105)<br />
+                      org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:349)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:428)<br />
+                      org.openqa.selenium.By$ByXPath.findElements(By.java:348)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:310)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:657)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:654)<br />
+                      org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)<br />
+                      pages.BasePage.waitForElementClickability(BasePage.java:18)<br />
+                      pages.BasePage.click(BasePage.java:36)<br />
+                      pages.AccountPage.clickOnLogout(AccountPage.java:26)<br />
+                      tests.UserTests.verifySignOutTest(UserTests.java:93)<br />
+                      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+                      java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.base/java.lang.reflect.Method.invoke(Method.java:566)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
+                      org.testng.internal.Invoker.invokeMethod(Invoker.java:583)<br />
+                      org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br />
+                      org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)<br />
+                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
+                      org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
+                      org.testng.TestRunner.run(TestRunner.java:505)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
+                      org.testng.SuiteRunner.access$000(SuiteRunner.java:40)<br />
+                      org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)<br />
+                      org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)<br />
+                      java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)<br />
+                      java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)<br />
+                      java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)<br />
+                      java.base/java.lang.Thread.run(Thread.java:834)<br />
+                  </div>
+          </div>
+      </td>
+</tr>
+      </table>
+
+
+  
+</body>
+</html>

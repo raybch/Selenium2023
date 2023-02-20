@@ -1,0 +1,4 @@
+tests\CartTests.class
+tests\UserTests.class
+tests\SmokeTests.class
+tests\SearchTests.class
